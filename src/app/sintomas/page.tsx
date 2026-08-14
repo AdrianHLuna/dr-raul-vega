@@ -49,7 +49,7 @@ export default function SymptomsListPage() {
                 Síntomas y Señales de Alarma Torácica
               </h1>
               <p className="text-slate-200 text-base lg:text-lg max-w-3xl leading-relaxed font-medium mb-6">
-                Identifica las molestias y hallazgos en estudios de imagen que requieren la valoración por un cirujano cardiotorácico.
+                Identifica las molestias y hallazgos en estudios de imagen que requieren la valoración por un cirujano torácico.
               </p>
               <div className="flex flex-wrap gap-3 text-xs font-semibold text-slate-300">
                 <span className="bg-white/10 px-3 py-1 rounded-full border border-white/15">

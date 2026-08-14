@@ -4,8 +4,8 @@ export const doctor: DoctorProfile = {
   name: "Raúl David Vega Vivar",
   title: "Dr.",
   specialty: "Cirugía General",
-  specialistTitle: "Cirujano Cardiotorácico y Cirujano de Tórax",
-  subspecialty: "Cirugía Cardiotorácica (Tórax, Pulmón y Mediastino)",
+  specialistTitle: "Cirujano de Tórax",
+  subspecialty: "Cirugía Torácica (Pulmón, Pleura y Mediastino)",
   cedula: "9781625",
   cedulaEspecialidad: "12463691",
   cedulaSubespecialidad: "14842215",
@@ -13,28 +13,28 @@ export const doctor: DoctorProfile = {
   phone: "5628395496",
   whatsapp: "5628395496",
   email: "contacto@drraulvega.com",
-  address: "Vialidad de la Barranca S/N, entre Blvd. Interlomas y Blvd. Hacienda de las Palmas, Col. Hacienda de las Palmas, C.P. 52763, Jesús del Monte",
+  address: "Hospital Ángeles Lomas, Vialidad de la Barranca S/N, Col. Hacienda de las Palmas, C.P. 52763, Huixquilucan, Edo. de México",
   city: "Ciudad de México",
-  state: "Ciudad de México",
+  state: "Estado de México / CDMX",
   country: "México",
-  googleMapsUrl: "https://maps.google.com/?q=Vialidad+de+la+Barranca+Hacienda+de+las+Palmas+Huixquilucan",
+  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Hospital+Angeles+Lomas+Vialidad+de+la+Barranca+Hacienda+de+las+Palmas+52763+Huixquilucan",
   consultationPrice: 2000,
   paymentMethods: ["Efectivo", "Transferencia", "Tarjeta de Débito", "Tarjeta de Crédito", "Pagos NFC", "Meses Sin Intereses (MSI)"],
   insurances: ["AXA Seguros", "GNP Seguros", "MetLife", "Monterrey New York Life", "Mapfre", "Seguros Banorte", "Bupa", "Allianz"],
   schedule: "Lunes a Viernes de 08:00 a 21:00 hrs. Sábados de 09:00 a 15:00 hrs.",
   photo: "/images/doctor-raul-vega.webp",
   logo: "/images/logo/200743927_padded_logo.png",
-  bio: "Soy el Dr. Raúl David Vega Vivar, cirujano especializado en Cirugía General con subespecialidad en Cirugía Cardiotorácica. Mi práctica médica y quirúrgica en la Ciudad de México e Interlomas está dedicada al diagnóstico y tratamiento quirúrgico de patologías del pulmón, pleura, mediastino, tráquea y pared torácica. Cuento con alta capacitación en Cirugía Torácica Videoasistida (VATS - Mínimamente Invasiva), priorizando siempre la seguridad, pronta recuperación y calidad de vida de mis pacientes.",
-  philosophy: "Atención quirúrgica torácica de excelencia basada en la innovación tecnológica mínimamente invasiva (VATS), con un trato ético, humano y altamente resolutivo.",
+  bio: "Soy el Dr. Raúl David Vega Vivar, cirujano especializado en Cirugía General con subespecialidad en Cirugía Torácica. Mi práctica médica y quirúrgica en el Hospital Ángeles Lomas y Ciudad de México está dedicada a la Cirugía de Tórax Mínimamente Invasiva (VATS), así como al diagnóstico y tratamiento integral de patologías de pulmón, pleura, mediastino, tráquea y pared torácica con tecnología de vanguardia.",
+  philosophy: "Atención quirúrgica torácica de excelencia en Cirugía de Tórax Mínimamente Invasiva (VATS), priorizando la innovación tecnológica, el dolor mínimo, la rápida recuperación y un trato ético y humano.",
   experience: [
     {
       year: "2019 - Presente",
-      title: "Cirujano Cardiotorácico y Torácico Principal",
+      title: "Cirujano Torácico Principal",
       description: "Más de 6 años de experiencia especializada con más de 2,500 pacientes atendidos y +1,500 procedimientos quirúrgicos realizados con éxito.",
     },
     {
       year: "2017 - 2019",
-      title: "Residencia y Subespecialidad en Cirugía Cardiotorácica",
+      title: "Residencia y Subespecialidad en Cirugía Torácica",
       description: "Entrenamiento quirúrgico avanzado en instituciones de alta especialidad de la UNAM.",
     }
   ],
@@ -55,15 +55,15 @@ export const doctor: DoctorProfile = {
   education: [
     {
       degree: "Médico Cirujano",
-      institution: "Universidad La Salle (Céd. Prof. 9781625)",
+      institution: "Universidad La Salle • céd. prof. 9781625 (La Salle)",
     },
     {
       degree: "Especialidad en Cirugía General",
-      institution: "Universidad Autónoma de Yucatán - UADY (Céd. Esp. 12463691)",
+      institution: "Universidad Autónoma de Yucatán • céd. esp. 12463691 (UADY)",
     },
     {
-      degree: "Subespecialidad en Cirugía Cardiotorácica",
-      institution: "Universidad Nacional Autónoma de México - UNAM (Céd. Subesp. 14842215)",
+      degree: "Subespecialidad en Cirugía Torácica",
+      institution: "Universidad Nacional Autónoma de México • céd. subesp. 14842215 (UNAM)",
     }
   ],
   testimonials: [

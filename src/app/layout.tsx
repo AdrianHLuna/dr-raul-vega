@@ -6,15 +6,15 @@ import FloatingButtons from "@/components/FloatingButtons";
 import { doctor } from "@/data/doctor";
 
 export const metadata: Metadata = {
-  title: `${doctor.title} ${doctor.name} | ${doctor.specialistTitle} en CDMX`,
+  title: `${doctor.title} ${doctor.name} | Cirujano de Tórax en CDMX`,
   description: doctor.bio.substring(0, 160) + "...",
   keywords: [
-    `Cirujano cardiotoracico CDMX`,
-    `Cirujano de torax Interlomas`,
+    `Cirujano de torax CDMX`,
+    `Cirujano toracico Angeles Lomas`,
     `Cirugia toracica VATS CDMX`,
-    `Lobectomia pulmonar CDMX`,
-    `Cancer de pulmon cirugia`,
-    `Simpatectomia hiperhidrosis`
+    `Lobectomia pulmonar VATS CDMX`,
+    `Cancer de pulmon cirugia VATS`,
+    `Simpatectomia hiperhidrosis VATS`
   ],
   openGraph: {
     title: `${doctor.title} ${doctor.name} | ${doctor.specialistTitle}`,

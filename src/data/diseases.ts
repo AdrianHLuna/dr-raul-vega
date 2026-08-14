@@ -48,7 +48,7 @@ export const diseases: MedicalCondition[] = [
     image: "/images/diseases/cancer-pulmon.webp",
     seo: {
       title: "Cirugía de Cáncer de Pulmón en CDMX | Dr. Raúl David Vega Vivar",
-      description: "Cirujano cardiotorácico especialista en cirugía oncológica pulmonar por VATS mínimamente invasiva en CDMX e Interlomas. Diagnóstico y lobectomía.",
+      description: "Cirujano torácico especialista en cirugía oncológica pulmonar por VATS mínimamente invasiva en CDMX e Interlomas. Diagnóstico y lobectomía.",
       keywords: ["cancer de pulmon cdmx", "cirujano toracico interlomas", "lobectomia vats cdmx", "nodulo pulmonar biopsia"]
     }
   },
@@ -82,7 +82,7 @@ export const diseases: MedicalCondition[] = [
     ],
     treatments: [
       "Toracostomía con colocación de sonda endopleural bajo control ecográfico",
-      "Decorticación pleural y debridación quirúrgica por VATS para liberar el pulmón",
+      "Decorticación pleural por VATS para liberar el pulmón",
       "Pleurodesis química o quirúrgica para derrames malignos recurrentes",
       "Instilación intrapleural de fibrinolíticos en derrames loculados"
     ],
@@ -99,14 +99,14 @@ export const diseases: MedicalCondition[] = [
     image: "/images/diseases/derrame-pleural.webp",
     seo: {
       title: "Derrame Pleural y Empiema Pleural en CDMX | Dr. Raúl David Vega Vivar",
-      description: "Tratamiento quirúrgico para derrame pleural y empiema en CDMX. Toracostomía, decorticación por VATS y pleurodesis con cirujano cardiotorácico.",
+      description: "Tratamiento quirúrgico para derrame pleural y empiema en CDMX. Toracostomía, decorticación por VATS y pleurodesis con cirujano torácico.",
       keywords: ["derrame pleural cdmx", "empiema pleural tratamiento", "decorticacion por vats", "cirujano pulmonar interlomas"]
     }
   },
   {
     id: "neumotorax-espontaneo-bullas",
     slug: "neumotorax-espontaneo-bullas",
-    name: "Neumotórax Espontáneo y Enfitema Bulloso",
+    name: "Neumotórax Espontáneo y Enfisema Bulloso",
     technicalName: "Neumotórax Espontáneo Primario / Secundario a Bullas",
     description: "Presencia de aire en la cavidad pleural proveniente de la rotura de vesículas o bullas subpleurales, provocando el colapso parcial o total del pulmón.",
     symptoms: [
@@ -150,7 +150,7 @@ export const diseases: MedicalCondition[] = [
     image: "/images/diseases/neumotorax.webp",
     seo: {
       title: "Neumotórax Espontáneo y Cirugía de Bullas | Dr. Raúl David Vega Vivar",
-      description: "Tratamiento definitivo para neumotórax espontáneo y bullas pulmonares en CDMX. Bullectomía y pleurodesis por VATS con cirujano cardiotorácico.",
+      description: "Tratamiento definitivo para neumotórax espontáneo y bullas pulmonares en CDMX. Bullectomía y pleurodesis por VATS con cirujano torácico.",
       keywords: ["neumotorax espontaneo cdmx", "cirugia de bullas pulmonares", "bullectomia por vats", "colapso pulmonar tratamiento"]
     }
   },
@@ -200,7 +200,7 @@ export const diseases: MedicalCondition[] = [
     image: "/images/diseases/timoma-mediastino.webp",
     seo: {
       title: "Tumores del Mediastino y Timectomía por VATS | Dr. Raúl David Vega Vivar",
-      description: "Cirugía especializada de tumores mediastinales y timectomía por VATS para timoma y miastenia gravis en CDMX. Cirujano cardiotorácico en Interlomas.",
+      description: "Cirugía especializada de tumores mediastinales y timectomía por VATS para timoma y miastenia gravis en CDMX. Cirujano torácico en Interlomas.",
       keywords: ["timoma cirugia cdmx", "timectomia vats miastenia gravis", "tumores de mediastino cdmx", "cirujano de torax interlomas"]
     }
   },
@@ -399,7 +399,7 @@ export const diseases: MedicalCondition[] = [
     image: "/images/diseases/estenosis-traqueal.webp",
     seo: {
       title: "Cirugía de Estenosis Traqueal y Tráquea en CDMX | Dr. Raúl David Vega Vivar",
-      description: "Reconstrucción y resección de estenosis traqueal post-intubación y tumores de tráquea en CDMX e Interlomas. Cirujano cardiotorácico especialista.",
+      description: "Reconstrucción y resección de estenosis traqueal post-intubación y tumores de tráquea en CDMX e Interlomas. Cirujano torácico especialista.",
       keywords: ["estenosis traqueal cirugia cdmx", "reseccion traqueal traqueoplastia", "tumores de traquea tratamiento", "cirujano de via aerea cdmx"]
     }
   },
@@ -446,7 +446,7 @@ export const diseases: MedicalCondition[] = [
     image: "/images/diseases/quistes-mediastinales.webp",
     seo: {
       title: "Cirugía de Quistes Mediastinales por VATS | Dr. Raúl David Vega Vivar",
-      description: "Resección de quistes broncogénicos y pericárdicos del mediastino por VATS en CDMX. Consulta con cirujano cardiotorácico en Interlomas.",
+      description: "Resección de quistes broncogénicos y pericárdicos del mediastino por VATS en CDMX. Consulta con cirujano torácico en Interlomas.",
       keywords: ["quiste broncogenico cirugia", "quiste pericardico vats", "tumores mediastinales cdmx", "cirujano toracico interlomas"]
     }
   },
@@ -496,7 +496,7 @@ export const diseases: MedicalCondition[] = [
     image: "/images/diseases/absceso-pulmonar.webp",
     seo: {
       title: "Tratamiento de Absceso Pulmonar y Bronquiectasias | Dr. Raúl David Vega Vivar",
-      description: "Cirugía resolutiva para absceso pulmonar y bronquiectasias localizadas en CDMX. Lobectomía por VATS con cirujano cardiotorácico especialista.",
+      description: "Cirugía resolutiva para absceso pulmonar y bronquiectasias localizadas en CDMX. Lobectomía por VATS con cirujano torácico especialista.",
       keywords: ["absceso pulmonar cirugia cdmx", "bronquiectasias lobectomia", "hemoptisis tratamiento quirúrgico", "cirujano de torax cdmx"]
     }
   },
@@ -594,7 +594,7 @@ export const diseases: MedicalCondition[] = [
     image: "/images/diseases/micetoma-tuberculosis.webp",
     seo: {
       title: "Cirugía de Tuberculosis y Micetoma Pulmonar | Dr. Raúl David Vega Vivar",
-      description: "Tratamiento quirúrgico para micetoma pulmonar, aspergiloma y secuelas cavitadas de tuberculosis en CDMX. Cirujano cardiotorácico especialista.",
+      description: "Tratamiento quirúrgico para micetoma pulmonar, aspergiloma y secuelas cavitadas de tuberculosis en CDMX. Cirujano torácico especialista.",
       keywords: ["micetoma pulmonar cirugia", "aspergiloma tratamiento cdmx", "tuberculosis secuelas cirugia", "cirujano toracico polanco"]
     }
   }

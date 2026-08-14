@@ -7,15 +7,15 @@ import StructuredData from "@/components/StructuredData";
 import { FaBriefcaseMedical, FaArrowRight, FaCheckCircle, FaClock, FaHeartbeat, FaLungs, FaDna } from "react-icons/fa";
 
 export const metadata = {
-  title: `Cirugías Torácicas y Procedimientos VATS | ${doctor.title} ${doctor.name}`,
-  description: "Catálogo de intervenciones quirúrgicas de tórax, pulmón y mediastino. Cirugía mínimamente invasiva por VATS en CDMX e Interlomas.",
+  title: `Cirugía de Tórax Mínimamente Invasiva (VATS) | ${doctor.title} ${doctor.name}`,
+  description: "Catálogo de intervenciones quirúrgicas: Cirugía de tórax mínimamente invasiva (VATS), resección pulmonar y mediastino en CDMX e Interlomas.",
 };
 
 export default function ServicesListPage() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "MedicalWebPage",
-    name: "Cirugías y Procedimientos Torácicos Avanzados",
+    name: "Cirugía de Tórax Mínimamente Invasiva (VATS) y Procedimientos Quirúrgicos",
     description: metadata.description,
     author: {
       "@type": "Physician",
@@ -43,13 +43,13 @@ export default function ServicesListPage() {
 
             <div className="max-w-3xl relative z-10">
               <span className="text-xs font-black uppercase tracking-widest text-[#00A896] bg-white/10 px-3.5 py-1 rounded-full border border-white/15 inline-block mb-3">
-                Intervenciones Quirúrgicas
+                Procedimientos de Alta Especialidad
               </span>
               <h1 className="text-3xl lg:text-5xl font-black text-white mb-4 leading-tight">
-                Cirugías y Procedimientos Torácicos
+                Cirugía de Tórax Mínimamente Invasiva (VATS)
               </h1>
               <p className="text-slate-200 text-base lg:text-lg max-w-3xl leading-relaxed font-medium mb-6">
-                Tecnología quirúrgica de vanguardia por VATS (videoasistida mínimamente invasiva) y reconstrucción torácica de alta especialidad.
+                Tecnología quirúrgica de vanguardia mediante videoasistencia (VATS) e intervenciones de reconstrucción torácica de máxima precisión con dolor mínimo y rápida recuperación.
               </p>
               <div className="flex flex-wrap gap-3 text-xs font-semibold text-slate-300">
                 <span className="bg-white/10 px-3 py-1 rounded-full border border-white/15">

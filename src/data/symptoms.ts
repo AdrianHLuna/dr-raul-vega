@@ -17,7 +17,7 @@ export const symptoms: Symptom[] = [
     image: "/images/symptoms/dolor-toracico.webp",
     seo: {
       title: "Dolor Torácico Persistente e Intenso en CDMX | Dr. Raúl David Vega Vivar",
-      description: "Evaluación médica especializada para dolor de pecho y pleura en CDMX e Interlomas. Diagnóstico preciso por cirujano cardiotorácico.",
+      description: "Evaluación médica especializada para dolor de pecho y pleura en CDMX e Interlomas. Diagnóstico preciso por cirujano torácico.",
       keywords: ["dolor toracico cdmx", "dolor al respirar hondo", "dolor pleuritico diagnostico", "cirujano toracico interlomas"]
     }
   },
@@ -37,7 +37,7 @@ export const symptoms: Symptom[] = [
     image: "/images/symptoms/disnea-falta-aire.webp",
     seo: {
       title: "Falta de Aire y Sofocación Respiratoria | Dr. Raúl David Vega Vivar",
-      description: "Diagnóstico y tratamiento para la disnea y falta de aire severa en CDMX. Evaluación por cirujano cardiotorácico especialista.",
+      description: "Diagnóstico y tratamiento para la disnea y falta de aire severa en CDMX. Evaluación por cirujano torácico especialista.",
       keywords: ["falta de aire cdmx", "disnea progresiva causas", "dificultad para respirar torax", "cirujano pulmonar interlomas"]
     }
   },
@@ -57,7 +57,7 @@ export const symptoms: Symptom[] = [
     image: "/images/symptoms/hemoptisis.webp",
     seo: {
       title: "Tos con Sangre (Hemoptisis) en CDMX | Dr. Raúl David Vega Vivar",
-      description: "Evaluación urgente para tos con sangre y esputo sangriento en CDMX. Cirujano cardiotorácico especialista en hemoptisis y tumores.",
+      description: "Evaluación urgente para tos con sangre y esputo sangriento en CDMX. Cirujano torácico especialista en hemoptisis y tumores.",
       keywords: ["tos con sangre cdmx", "hemoptisis causas tratamiento", "sangrado al toser pulmones", "cirujano toracico urgencias"]
     }
   },
@@ -113,7 +113,7 @@ export const symptoms: Symptom[] = [
     image: "/images/symptoms/masa-mediastinal.webp",
     seo: {
       title: "Tumores y Masas Mediastinales en CDMX | Dr. Raúl David Vega Vivar",
-      description: "Evaluación y cirugía por VATS de masas y tumores del mediastino en CDMX. Cirujano cardiotorácico experto en Interlomas.",
+      description: "Evaluación y cirugía por VATS de masas y tumores del mediastino en CDMX. Cirujano torácico experto en Interlomas.",
       keywords: ["tumor mediastino cdmx", "masa mediastinal tac", "timoma cirugia vats", "cirujano toracico interlomas"]
     }
   },
@@ -131,7 +131,7 @@ export const symptoms: Symptom[] = [
     image: "/images/symptoms/fractura-costilla.webp",
     seo: {
       title: "Dolor por Fractura de Costilla en CDMX | Dr. Raúl David Vega Vivar",
-      description: "Tratamiento quirúrgico con placas de titanio para fracturas costales dolorosas en CDMX. Cirujano cardiotorácico en trauma.",
+      description: "Tratamiento quirúrgico con placas de titanio para fracturas costales dolorosas en CDMX. Cirujano torácico en trauma.",
       keywords: ["fractura de costilla dolor cdmx", "fijacion costal placas titanio", "torax inestable cirugia", "trauma toracico interlomas"]
     }
   },
@@ -168,7 +168,7 @@ export const symptoms: Symptom[] = [
     image: "/images/symptoms/tos-cronica.webp",
     seo: {
       title: "Tos Crónica Persistente en CDMX | Dr. Raúl David Vega Vivar",
-      description: "Evaluación médica de tos persistente de más de 8 semanas en CDMX. Tomografía y diagnóstico por cirujano cardiotorácico.",
+      description: "Evaluación médica de tos persistente de más de 8 semanas en CDMX. Tomografía y diagnóstico por cirujano torácico.",
       keywords: ["tos cronica causas cdmx", "tos persistente 8 semanas", "evaluación tos fumadores", "cirujano pulmonar interlomas"]
     }
   },
@@ -186,7 +186,7 @@ export const symptoms: Symptom[] = [
     image: "/images/symptoms/infeccion-pleural.webp",
     seo: {
       title: "Agua o Pus en el Tórax (Empiema) | Dr. Raúl David Vega Vivar",
-      description: "Drenaje quirúrgico y debridación de pus en la pleura en CDMX. Limpieza por VATS con cirujano cardiotorácico experto.",
+      description: "Drenaje quirúrgico y debridación de pus en la pleura en CDMX. Limpieza por VATS con cirujano torácico experto.",
       keywords: ["pus en el torax empiema", "agua en los pulmones tratamiento", "drenaje pleural cdmx", "cirujano toracico polanco"]
     }
   }

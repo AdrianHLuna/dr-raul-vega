@@ -106,19 +106,19 @@ export default function Home() {
                   <FaLungs /> {doctor.specialistTitle}
                 </span>
                 <span className="px-3.5 py-1.5 rounded-full bg-white/10 text-slate-200 font-semibold text-xs border border-white/15">
-                  Interlomas / Jesús del Monte, CDMX
+                  Hospital Ángeles Lomas
                 </span>
               </div>
 
               <h1 className="text-4xl lg:text-6xl font-black leading-tight tracking-tight text-white mb-6">
-                Cirugía Cardiotorácica <br className="hidden sm:block"/>
+                Cirujano de Tórax <br className="hidden sm:block"/>
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00A896] via-[#02C39A] to-cyan-200">
-                  & Mínima Invasión (VATS)
+                  & Alta Especialidad (VATS)
                 </span>
               </h1>
 
               <p className="text-base lg:text-xl text-slate-200 font-medium max-w-2xl leading-relaxed mb-8">
-                Diagnóstico de precisión y tratamiento quirúrgico para cáncer de pulmón, derrame pleural, neumotórax, timoma e hiperhidrosis.
+                Diagnóstico de precisión y tratamiento quirúrgico de vanguardia con mínima invasión para cáncer de pulmón, derrame pleural, neumotórax, timoma e hiperhidrosis.
               </p>
             </div>
 
@@ -132,7 +132,7 @@ export default function Home() {
                 rel="noreferrer"
                 className="px-8 py-4 rounded-2xl bg-[#00A896] text-[#0A192F] font-black text-base flex items-center gap-3 hover:bg-[#02C39A] transition-all shadow-xl shadow-[#00A896]/20"
               >
-                <FaCalendarCheck size={18} /> Agendar Consulta en Interlomas
+                <FaCalendarCheck size={18} /> Agendar Consulta
               </motion.a>
               <motion.a
                 whileHover={{ scale: 1.05 }}
@@ -167,7 +167,7 @@ export default function Home() {
                 {doctor.specialistTitle}
               </p>
               <p className="text-xs text-slate-300 mt-2 font-medium">
-                UNAM • UADY • La Salle
+                céd. prof. 9781625 (La Salle) • céd. esp. 12463691 (UADY) • céd. subesp. 14842215 (UNAM)
               </p>
             </div>
 
@@ -247,9 +247,9 @@ export default function Home() {
                   </p>
 
                   <div className="mt-6 pt-4 border-t border-white/20 text-[11px] text-slate-300 font-medium space-y-1">
-                    <p>• UNAM: Céd. Subesp. 14842215</p>
-                    <p>• UADY: Céd. Esp. 12463691</p>
-                    <p>• La Salle: Céd. Prof. 9781625</p>
+                    <p>• céd. prof. 9781625 (La Salle)</p>
+                    <p>• céd. esp. 12463691 (UADY)</p>
+                    <p>• céd. subesp. 14842215 (UNAM)</p>
                   </div>
                 </div>
 
@@ -298,18 +298,18 @@ export default function Home() {
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
                 <div className="bg-slate-50 p-4 rounded-2xl border border-slate-200/60">
                   <FaUniversity className="text-[#00A896] text-xl mb-2" />
-                  <p className="font-extrabold text-xs text-slate-900">Cirugía Cardiotorácica</p>
-                  <p className="text-[10px] text-slate-500 font-medium">UNAM (Céd. 14842215)</p>
+                  <p className="font-extrabold text-xs text-slate-900">Médico Cirujano</p>
+                  <p className="text-[10px] text-slate-500 font-medium">céd. prof. 9781625 (La Salle)</p>
                 </div>
                 <div className="bg-slate-50 p-4 rounded-2xl border border-slate-200/60">
                   <FaUniversity className="text-[#00A896] text-xl mb-2" />
                   <p className="font-extrabold text-xs text-slate-900">Cirugía General</p>
-                  <p className="text-[10px] text-slate-500 font-medium">UADY (Céd. 12463691)</p>
+                  <p className="text-[10px] text-slate-500 font-medium">céd. esp. 12463691 (UADY)</p>
                 </div>
                 <div className="bg-slate-50 p-4 rounded-2xl border border-slate-200/60">
                   <FaUniversity className="text-[#00A896] text-xl mb-2" />
-                  <p className="font-extrabold text-xs text-slate-900">Médico Cirujano</p>
-                  <p className="text-[10px] text-slate-500 font-medium">La Salle (Céd. 9781625)</p>
+                  <p className="font-extrabold text-xs text-slate-900">Cirugía Torácica (VATS)</p>
+                  <p className="text-[10px] text-slate-500 font-medium">céd. subesp. 14842215 (UNAM)</p>
                 </div>
               </div>
             </motion.div>
@@ -523,7 +523,7 @@ export default function Home() {
               Ubicación del Consultorio
             </span>
             <h2 className="text-3xl lg:text-4xl font-black text-white">
-              Consultorio en Interlomas / Jesús del Monte
+              Consultorio en Hospital Ángeles Lomas
             </h2>
             <div className="space-y-3 text-sm text-slate-200">
               <p className="flex items-start gap-3">
@@ -554,7 +554,7 @@ export default function Home() {
               rel="noreferrer"
               className="w-full py-4 rounded-xl bg-[#00A896] text-[#0A192F] font-black text-sm uppercase tracking-wider flex items-center justify-center gap-2 hover:bg-[#02C39A] transition-all shadow-xl"
             >
-              <FaWhatsapp size={18} /> Contactar por WhatsApp
+              <FaWhatsapp size={18} /> Agendar Cita
             </motion.a>
           </div>
 

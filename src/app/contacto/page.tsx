@@ -21,7 +21,7 @@ import {
 
 export const metadata = {
   title: `Contacto y Ubicación del Consultorio | ${doctor.title} ${doctor.name}`,
-  description: `Dirección, teléfono de urgencias 24/7, WhatsApp y mapa de ubicación del consultorio de cirugía cardiotorácica del ${doctor.title} ${doctor.name} en Interlomas.`,
+  description: `Dirección, teléfono de urgencias 24/7, WhatsApp y mapa de ubicación del consultorio de cirugía torácica del ${doctor.title} ${doctor.name} en Interlomas.`,
 };
 
 export default function ContactPage() {
@@ -30,7 +30,7 @@ export default function ContactPage() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "MedicalClinic",
-    name: `${doctor.title} ${doctor.name} - Cirugía Cardiotorácica`,
+    name: `${doctor.title} ${doctor.name} - Cirugía Torácica`,
     address: {
       "@type": "PostalAddress",
       streetAddress: doctor.address,
@@ -94,7 +94,7 @@ export default function ContactPage() {
                     Centro de Citas Presenciales
                   </span>
                   <h2 className="text-2xl font-black text-white mt-3">
-                    Consultorio Interlomas
+                    Consultorio Hospital Ángeles Lomas
                   </h2>
                 </div>
                 <div className="w-12 h-12 rounded-2xl bg-[#00A896]/20 text-[#00A896] flex items-center justify-center font-black">
@@ -153,7 +153,7 @@ export default function ContactPage() {
                   rel="noreferrer"
                   className="w-full py-4 rounded-xl bg-[#00A896] text-[#0A192F] font-black text-xs uppercase tracking-wider flex items-center justify-center gap-2 hover:bg-[#02C39A] transition-all shadow-xl"
                 >
-                  <FaWhatsapp size={18} /> Confirmar Horario por WhatsApp
+                  <FaWhatsapp size={18} /> Agendar Cita
                 </a>
                 <a
                   href={`tel:${doctor.phone}`}
@@ -188,8 +188,8 @@ export default function ContactPage() {
                 {/* ALWAYS VISIBLE EMBEDDED GOOGLE MAP IFRAME */}
                 <div className="w-full h-[400px] rounded-2xl overflow-hidden border border-[#00A896]/40 shadow-inner relative">
                   <iframe
-                    title="Mapa de Ubicación Dr. Raúl Vega Interlomas"
-                    src="https://maps.google.com/maps?q=Vialidad+de+la+Barranca+Interlomas+Huixquilucan&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                    title="Mapa de Ubicación Dr. Raúl Vega - Hospital Ángeles Lomas"
+                    src="https://maps.google.com/maps?q=Hospital+Angeles+Lomas,+Vialidad+de+la+Barranca+S/N,+Hacienda+de+las+Palmas,+52763+Huixquilucan&t=&z=16&ie=UTF8&iwloc=&output=embed"
                     width="100%"
                     height="100%"
                     style={{ border: 0, filter: "contrast(1.05) saturate(1.1)" }}

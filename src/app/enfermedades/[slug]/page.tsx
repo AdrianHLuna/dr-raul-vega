@@ -243,16 +243,16 @@ export default async function DiseaseDetailPage({ params }: { params: Promise<{ 
                 ¿Requieres valoración por {disease.name}?
               </h3>
               <p className="text-slate-300 text-xs leading-relaxed">
-                El {doctor.title} {doctor.name} realizará una evaluación clínica tomográfica y quirúrgica en Interlomas / Jesús del Monte.
+                El {doctor.title} {doctor.name} realizará una evaluación clínica tomográfica y quirúrgica en el Hospital Ángeles Lomas.
               </p>
 
               <div className="bg-[#172A45] p-4 rounded-2xl border border-slate-800 space-y-2 text-xs">
                 <p className="font-bold text-white flex items-center gap-2">
                   <FaShieldAlt className="text-[#00A896]" /> Cédulas Oficiales:
                 </p>
-                <p className="text-slate-300">• UNAM Subesp: {doctor.cedulaSubespecialidad}</p>
-                <p className="text-slate-300">• UADY Esp: {doctor.cedulaEspecialidad}</p>
-                <p className="text-slate-300">• La Salle Lic: {doctor.cedula}</p>
+                <p className="text-slate-300">• céd. prof. {doctor.cedula} (La Salle)</p>
+                <p className="text-slate-300">• céd. esp. {doctor.cedulaEspecialidad} (UADY)</p>
+                <p className="text-slate-300">• céd. subesp. {doctor.cedulaSubespecialidad} (UNAM)</p>
               </div>
 
               <div className="pt-2 space-y-3">
@@ -262,7 +262,7 @@ export default async function DiseaseDetailPage({ params }: { params: Promise<{ 
                   rel="noreferrer"
                   className="w-full py-4 rounded-xl bg-[#00A896] text-[#0A192F] font-black text-xs uppercase tracking-wider flex items-center justify-center gap-2 hover:bg-[#02C39A] transition-all shadow-xl"
                 >
-                  <FaWhatsapp size={18} /> Agendar Cita en WhatsApp
+                  <FaWhatsapp size={18} /> Agendar Cita
                 </a>
                 <a
                   href={`tel:${doctor.phone}`}

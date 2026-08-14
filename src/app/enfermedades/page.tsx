@@ -8,7 +8,7 @@ import { FaLungs, FaArrowRight, FaCheckCircle, FaExclamationTriangle, FaDna } fr
 
 export const metadata = {
   title: `Enfermedades Torácicas y Pulmonares | ${doctor.title} ${doctor.name}`,
-  description: "Catálogo completo de enfermedades y patologías de tórax, pulmón y mediastino atendidas por cirujano cardiotorácico en CDMX e Interlomas.",
+  description: "Catálogo completo de enfermedades y patologías de tórax, pulmón y mediastino atendidas por cirujano torácico en CDMX e Interlomas.",
 };
 
 export default function DiseasesListPage() {
@@ -43,7 +43,7 @@ export default function DiseasesListPage() {
 
             <div className="max-w-3xl relative z-10">
               <span className="text-xs font-black uppercase tracking-widest text-[#00A896] bg-white/10 px-3.5 py-1 rounded-full border border-white/15 inline-block mb-3">
-                Especialidad Cardiotorácica
+                Especialidad Torácica
               </span>
               <h1 className="text-3xl lg:text-5xl font-black text-white mb-4 leading-tight">
                 Patologías de Tórax, Pulmón y Mediastino

@@ -180,7 +180,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
                   rel="noreferrer"
                   className="w-full py-4 rounded-xl bg-[#00A896] text-[#0A192F] font-black text-xs uppercase tracking-wider flex items-center justify-center gap-2 hover:bg-[#02C39A] transition-all shadow-xl"
                 >
-                  <FaWhatsapp size={18} /> Agendar Cita en WhatsApp
+                  <FaWhatsapp size={18} /> Agendar Cita
                 </a>
               </div>
             </div>

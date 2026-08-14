@@ -4,9 +4,9 @@ export const services: MedicalService[] = [
   {
     id: "cirugia-toracica-vats-videoasistida",
     slug: "cirugia-toracica-vats-videoasistida",
-    name: "Cirugía Torácica Videoasistida (VATS - Mínimamente Invasiva)",
+    name: "Cirugía de Tórax Mínimamente Invasiva (VATS)",
     description: "Procedimiento quirúrgico avanzado de tórax mediante toracoscopía con cámara de alta definición e instrumentos milimétricos especiales, evitando aperturas mayores de la pared torácica.",
-    longDescription: "La Cirugía Torácica Videoasistida (VATS por sus siglas en inglés, Video-Assisted Thoracoscopic Surgery) es el estándar de oro en la cirugía de tórax moderna. A través de 1 a 3 incisiones pequeñas (de 1 a 3 cm), permite realizar resecciones pulmonares complejas, timectomías y debridaciones sin separar ni cortar costillas, garantizando un dolor postoperatorio drásticamente menor y una rápida reincorporación a la vida laboral.",
+    longDescription: "La Cirugía de Tórax Mínimamente Invasiva (VATS por sus siglas en inglés, Video-Assisted Thoracoscopic Surgery) es el estándar de oro en la cirugía torácica moderna. A través de 1 a 3 incisiones pequeñas (de 1 a 3 cm), permite realizar resecciones pulmonares complejas, timectomías y debridaciones sin separar ni cortar costillas, garantizando un dolor postoperatorio drásticamente menor y una rápida reincorporación a la vida laboral.",
     type: "hospitalario",
     anesthesiaType: "Anestesia General con Ventilación Unipulmonar Selectiva",
     duration: "90 a 180 minutos",
@@ -33,9 +33,9 @@ export const services: MedicalService[] = [
     },
     image: "/images/services/vats-cirugia.webp",
     seo: {
-      title: "Cirugía Torácica Videoasistida VATS en CDMX | Dr. Raúl David Vega Vivar",
-      description: "Cirugía de tórax y pulmón mínimamente invasiva por VATS en CDMX e Interlomas. Menos dolor y rápida recuperación con cirujano cardiotorácico.",
-      keywords: ["cirugia toracica vats cdmx", "vats pulmonar interlomas", "cirujano de torax minima invasion", "lobectomia por vats"]
+      title: "Cirugía de Tórax Mínimamente Invasiva (VATS) en CDMX | Dr. Raúl David Vega Vivar",
+      description: "Cirugía de tórax mínimamente invasiva (VATS) en CDMX e Interlomas. Menos dolor y rápida recuperación con cirujano torácico especialista.",
+      keywords: ["cirugia de torax minimamente invasiva vats", "cirugia toracica vats cdmx", "vats pulmonar interlomas", "cirujano de torax minima invasion"]
     }
   },
   {
@@ -68,7 +68,7 @@ export const services: MedicalService[] = [
     image: "/images/services/lobectomia.webp",
     seo: {
       title: "Lobectomía Pulmonar y Cirugía Oncológica | Dr. Raúl David Vega Vivar",
-      description: "Resección pulmonar y lobectomía por VATS en CDMX para cáncer de pulmón y tumores. Cirujano cardiotorácico certificado.",
+      description: "Resección pulmonar y lobectomía por VATS en CDMX para cáncer de pulmón y tumores. Cirujano torácico certificado.",
       keywords: ["lobectomia pulmonar cdmx", "cirugia cancer de pulmon interlomas", "reseccion pulmonar vats", "cirujano oncologico toracico"]
     }
   },
@@ -109,7 +109,7 @@ export const services: MedicalService[] = [
   {
     id: "decorticacion-pleural-empiema",
     slug: "decorticacion-pleural-empiema",
-    name: "Decorticación Pleural y Debridación de Empiema",
+    name: "Decorticación Pleural",
     description: "Limpieza y remoción quirúrgica de la capa fibrinosa (corteza) que atrapa al pulmón debido a infecciones pleurales crónicas o derrames loculados.",
     longDescription: "Cuando una infección pleural avanza a fase de empiema o paquipleuritis, la pleura se engrosa formando una corteza rígida que impide que el pulmón se expanda. La decorticación por VATS o toracotomía remueve meticulosamente este tejido fibroso, liberando el pulmón para que vuelva a llenar la cavidad torácica.",
     type: "hospitalario",
@@ -134,9 +134,9 @@ export const services: MedicalService[] = [
     },
     image: "/images/services/decorticacion-pleural.webp",
     seo: {
-      title: "Decorticación Pleural y Empiema por VATS | Dr. Raúl David Vega Vivar",
-      description: "Cirugía de liberación pulmonar y empiema en CDMX. Decorticación por VATS con cirujano cardiotorácico especialista en Interlomas.",
-      keywords: ["decorticacion pleural cdmx", "empiema pleural cirugia vats", "limpieza de pleura", "cirujano pulmonar interlomas"]
+      title: "Decorticación Pleural por VATS | Dr. Raúl David Vega Vivar",
+      description: "Cirugía de liberación pulmonar en CDMX. Decorticación por VATS con cirujano torácico especialista en Interlomas.",
+      keywords: ["decorticacion pleural cdmx", "decorticacion por vats", "limpieza de pleura", "cirujano pulmonar interlomas"]
     }
   },
   {
@@ -203,7 +203,7 @@ export const services: MedicalService[] = [
     image: "/images/services/timectomia-vats.webp",
     seo: {
       title: "Timectomía Quirúrgica por VATS en CDMX | Dr. Raúl David Vega Vivar",
-      description: "Extirpación de timo por VATS sin esternotomía para timoma y miastenia gravis en CDMX e Interlomas. Cirujano cardiotorácico experto.",
+      description: "Extirpación de timo por VATS sin esternotomía para timoma y miastenia gravis en CDMX e Interlomas. Cirujano torácico experto.",
       keywords: ["timectomia por vats cdmx", "cirugia de timoma sin esternotomia", "miastenia gravis timectomia", "cirujano toracico interlomas"]
     }
   },
@@ -236,7 +236,7 @@ export const services: MedicalService[] = [
     image: "/images/services/traqueoplastia.webp",
     seo: {
       title: "Resección Traqueal y Traqueoplastia en CDMX | Dr. Raúl David Vega Vivar",
-      description: "Cirugía de reconstrucción traqueal para estenosis post-intubación y tumores de vía aérea en CDMX. Cirujano cardiotorácico especialista.",
+      description: "Cirugía de reconstrucción traqueal para estenosis post-intubación y tumores de vía aérea en CDMX. Cirujano torácico especialista.",
       keywords: ["reseccion traqueal cdmx", "traqueoplastia estenosis", "cirugia de via aerea alta", "retiro de traqueostomia cirugia"]
     }
   },
@@ -269,7 +269,7 @@ export const services: MedicalService[] = [
     image: "/images/services/plicatura-diafragma.webp",
     seo: {
       title: "Plicatura Diafragmática por VATS en CDMX | Dr. Raúl David Vega Vivar",
-      description: "Cirugía de parálisis y eventración diafragmática por VATS en CDMX e Interlomas. Cirujano cardiotorácico especialista.",
+      description: "Cirugía de parálisis y eventración diafragmática por VATS en CDMX e Interlomas. Cirujano torácico especialista.",
       keywords: ["plicatura diafragmatica vats", "hernia diafragmatica cirugia cdmx", "paralisis del diafragma tratamiento", "cirujano toracico interlomas"]
     }
   },

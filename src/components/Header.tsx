@@ -43,11 +43,11 @@ export default function Header() {
               <FaPhoneAlt className="animate-pulse" /> Urgencias Torácicas: <a href={`tel:${doctor.phone}`} className="hover:underline">{doctor.phone}</a>
             </span>
             <span className="flex items-center gap-2 text-slate-400">
-              <FaMapMarkerAlt className="text-[#00A896]" /> Interlomas / Jesús del Monte, CDMX
+              <FaMapMarkerAlt className="text-[#00A896]" /> Hospital Ángeles Lomas
             </span>
           </div>
           <div className="flex items-center gap-4 font-semibold text-slate-400">
-            <span>UNAM • UADY • La Salle</span>
+            <span>céd. prof. 9781625 (La Salle) • céd. esp. 12463691 (UADY) • céd. subesp. 14842215 (UNAM)</span>
             <span className="text-[#00A896]">|</span>
             <span className="text-emerald-400 flex items-center gap-1.5">
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
@@ -158,7 +158,7 @@ export default function Header() {
                 rel="noreferrer"
                 className="w-full py-3.5 rounded-xl bg-[#00A896] text-[#0A192F] font-black text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg"
               >
-                <FaWhatsapp size={16} /> Contactar por WhatsApp
+                <FaWhatsapp size={16} /> Agendar Cita
               </a>
               <a
                 href={`tel:${doctor.phone}`}

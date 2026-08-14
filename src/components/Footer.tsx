@@ -29,7 +29,7 @@ export default function Footer() {
             {doctor.specialistTitle}
           </p>
           <p className="text-xs text-slate-400 max-w-2xl mx-auto mt-3 font-medium leading-relaxed">
-            Universidad La Salle (Céd. {doctor.cedula}) • Universidad Autónoma de Yucatán (Céd. {doctor.cedulaEspecialidad}) • UNAM (Céd. {doctor.cedulaSubespecialidad})
+            céd. prof. {doctor.cedula} (La Salle) • céd. esp. {doctor.cedulaEspecialidad} (UADY) • céd. subesp. {doctor.cedulaSubespecialidad} (UNAM)
           </p>
         </div>
 
@@ -49,7 +49,7 @@ export default function Footer() {
                 <Link href="/enfermedades" className="hover:text-[#00A896] transition-colors">Enfermedades Torácicas</Link>
               </li>
               <li>
-                <Link href="/servicios" className="hover:text-[#00A896] transition-colors">Cirugías & VATS</Link>
+                <Link href="/servicios" className="hover:text-[#00A896] transition-colors">Cirugía de Tórax Mínimamente Invasiva (VATS)</Link>
               </li>
               <li>
                 <Link href="/sintomas" className="hover:text-[#00A896] transition-colors">Síntomas de Consulta</Link>
