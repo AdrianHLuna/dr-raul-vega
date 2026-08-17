@@ -56,7 +56,7 @@ export default function DiseasesListPage() {
                   • Cero fármacos de patente en catálogo
                 </span>
                 <span className="bg-white/10 px-3 py-1 rounded-full border border-white/15">
-                  • Abordaje quirúrgico VATS
+                  • Cirugía de Mínima Invasión
                 </span>
               </div>
             </div>

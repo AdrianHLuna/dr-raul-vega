@@ -112,9 +112,6 @@ export default function Home() {
 
               <h1 className="text-4xl lg:text-6xl font-black leading-tight tracking-tight text-white mb-6">
                 Cirujano de Tórax <br className="hidden sm:block"/>
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00A896] via-[#02C39A] to-cyan-200">
-                  & Alta Especialidad (VATS)
-                </span>
               </h1>
 
               <p className="text-base lg:text-xl text-slate-200 font-medium max-w-2xl leading-relaxed mb-8">
@@ -308,7 +305,7 @@ export default function Home() {
                 </div>
                 <div className="bg-slate-50 p-4 rounded-2xl border border-slate-200/60">
                   <FaUniversity className="text-[#00A896] text-xl mb-2" />
-                  <p className="font-extrabold text-xs text-slate-900">Cirugía Torácica (VATS)</p>
+                  <p className="font-extrabold text-xs text-slate-900">Cirugía Torácica</p>
                   <p className="text-[10px] text-slate-500 font-medium">céd. subesp. 14842215 (UNAM)</p>
                 </div>
               </div>
@@ -382,7 +379,7 @@ export default function Home() {
                 Cirugías & Procedimientos
               </span>
               <h2 className="text-3xl lg:text-4xl font-black text-white mt-3">
-                Intervenciones Quirúrgicas Torácicas & VATS
+                Intervenciones Quirúrgicas Torácicas & Mínima Invasión
               </h2>
             </div>
             <Link

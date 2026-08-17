@@ -28,6 +28,9 @@ export default function Footer() {
           <p className="text-xs sm:text-sm font-extrabold text-[#00A896] uppercase tracking-widest mt-1">
             {doctor.specialistTitle}
           </p>
+          <p className="text-xs font-semibold text-slate-300 mt-1">
+            Cirugía de Mínima Invasión
+          </p>
           <p className="text-xs text-slate-400 max-w-2xl mx-auto mt-3 font-medium leading-relaxed">
             céd. prof. {doctor.cedula} (La Salle) • céd. esp. {doctor.cedulaEspecialidad} (UADY) • céd. subesp. {doctor.cedulaSubespecialidad} (UNAM)
           </p>

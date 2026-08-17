@@ -24,8 +24,8 @@ export const doctor: DoctorProfile = {
   schedule: "Lunes a Viernes de 08:00 a 21:00 hrs. Sábados de 09:00 a 15:00 hrs.",
   photo: "/images/doctor-raul-vega.webp",
   logo: "/images/logo/200743927_padded_logo.png",
-  bio: "Soy el Dr. Raúl David Vega Vivar, cirujano especializado en Cirugía General con subespecialidad en Cirugía Torácica. Mi práctica médica y quirúrgica en el Hospital Ángeles Lomas y Ciudad de México está dedicada a la Cirugía de Tórax Mínimamente Invasiva (VATS), así como al diagnóstico y tratamiento integral de patologías de pulmón, pleura, mediastino, tráquea y pared torácica con tecnología de vanguardia.",
-  philosophy: "Atención quirúrgica torácica de excelencia en Cirugía de Tórax Mínimamente Invasiva (VATS), priorizando la innovación tecnológica, el dolor mínimo, la rápida recuperación y un trato ético y humano.",
+  bio: "Soy el Dr. Raúl David Vega Vivar, cirujano especializado en Cirugía General con subespecialidad en Cirugía Torácica. Mi práctica médica y quirúrgica en el Hospital Ángeles Lomas y Ciudad de México está dedicada a la Cirugía de Tórax de Mínima Invasión, así como al diagnóstico y tratamiento integral de patologías de pulmón, pleura, mediastino, tráquea y pared torácica con tecnología de vanguardia.",
+  philosophy: "Atención quirúrgica torácica de excelencia en Cirugía de Tórax de Mínima Invasión, priorizando la innovación tecnológica, el dolor mínimo, la rápida recuperación y un trato ético y humano.",
   experience: [
     {
       year: "2019 - Presente",
@@ -71,7 +71,7 @@ export const doctor: DoctorProfile = {
       id: "t1",
       patientName: "Ing. Carlos Mendoza R.",
       rating: 5,
-      text: "El Dr. Raúl Vega me realizó una cirugía pulmonar por VATS (mínimamente invasiva). Mi recuperación fue impresionantemente rápida y con dolor mínimo. Un cirujano de un nivel técnico e humano excepcional.",
+      text: "El Dr. Raúl Vega me realizó una cirugía pulmonar de mínima invasión. Mi recuperación fue impresionantemente rápida y con dolor mínimo. Un cirujano de un nivel técnico e humano excepcional.",
       date: "Hace 1 mes",
     },
     {

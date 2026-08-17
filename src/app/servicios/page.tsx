@@ -53,7 +53,7 @@ export default function ServicesListPage() {
               </p>
               <div className="flex flex-wrap gap-3 text-xs font-semibold text-slate-300">
                 <span className="bg-white/10 px-3 py-1 rounded-full border border-white/15">
-                  • Mínima invasión por VATS
+                  • Cirugía de Mínima Invasión
                 </span>
                 <span className="bg-white/10 px-3 py-1 rounded-full border border-white/15">
                   • Estancia hospitalaria corta

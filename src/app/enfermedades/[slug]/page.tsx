@@ -124,7 +124,7 @@ export default async function DiseaseDetailPage({ params }: { params: Promise<{ 
             </div>
             <div>
               <p className="text-[11px] text-slate-400 uppercase font-bold tracking-wider">Abordaje Recomendado</p>
-              <p className="text-sm font-extrabold text-white">Mínima Invasión VATS</p>
+              <p className="text-sm font-extrabold text-white">Cirugía de Mínima Invasión</p>
             </div>
           </div>
 
