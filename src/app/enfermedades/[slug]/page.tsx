@@ -109,7 +109,7 @@ export default async function DiseaseDetailPage({ params }: { params: Promise<{ 
                   rel="noreferrer"
                   className="px-6 py-3.5 rounded-2xl bg-[#00A896] text-[#0A192F] font-black text-xs uppercase tracking-wider hover:bg-[#02C39A] transition-all shadow-xl flex items-center gap-2"
                 >
-                  <FaCalendarCheck size={16} /> Consultar con Cirujano Torácico
+                  <FaCalendarCheck size={16} /> Agendar Cita
                 </a>
               </div>
             </div>
@@ -144,7 +144,7 @@ export default async function DiseaseDetailPage({ params }: { params: Promise<{ 
             </div>
             <div>
               <p className="text-[11px] text-slate-400 uppercase font-bold tracking-wider">Ubicación</p>
-              <p className="text-sm font-extrabold text-white">Interlomas CDMX</p>
+              <p className="text-sm font-extrabold text-white">Ciudad de México</p>
             </div>
           </div>
         </div>
@@ -243,16 +243,16 @@ export default async function DiseaseDetailPage({ params }: { params: Promise<{ 
                 ¿Requieres valoración por {disease.name}?
               </h3>
               <p className="text-slate-300 text-xs leading-relaxed">
-                El {doctor.title} {doctor.name} realizará una evaluación clínica tomográfica y quirúrgica en el Hospital Ángeles Lomas.
+                El {doctor.title} {doctor.name} realizará una evaluación clínica tomográfica y quirúrgica presencial.
               </p>
 
               <div className="bg-[#172A45] p-4 rounded-2xl border border-slate-800 space-y-2 text-xs">
                 <p className="font-bold text-white flex items-center gap-2">
                   <FaShieldAlt className="text-[#00A896]" /> Cédulas Oficiales:
                 </p>
-                <p className="text-slate-300">• céd. prof. {doctor.cedula} (La Salle)</p>
-                <p className="text-slate-300">• céd. esp. {doctor.cedulaEspecialidad} (UADY)</p>
-                <p className="text-slate-300">• céd. subesp. {doctor.cedulaSubespecialidad} (UNAM)</p>
+                <p className="text-slate-300 whitespace-nowrap">• Céd. Prof. {doctor.cedula} (La Salle)</p>
+                <p className="text-slate-300 whitespace-nowrap">• Céd. Esp. {doctor.cedulaEspecialidad} (UADY)</p>
+                <p className="text-slate-300 whitespace-nowrap">• Céd. Subesp. {doctor.cedulaSubespecialidad} (UNAM)</p>
               </div>
 
               <div className="pt-2 space-y-3">

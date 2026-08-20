@@ -31,9 +31,13 @@ export default function Footer() {
           <p className="text-xs font-semibold text-slate-300 mt-1">
             Cirugía de Mínima Invasión
           </p>
-          <p className="text-xs text-slate-400 max-w-2xl mx-auto mt-3 font-medium leading-relaxed">
-            céd. prof. {doctor.cedula} (La Salle) • céd. esp. {doctor.cedulaEspecialidad} (UADY) • céd. subesp. {doctor.cedulaSubespecialidad} (UNAM)
-          </p>
+          <div className="text-xs text-slate-400 max-w-2xl mx-auto mt-3 font-medium leading-relaxed flex flex-wrap justify-center items-center gap-x-2 gap-y-1">
+            <span className="whitespace-nowrap">Céd. Prof. {doctor.cedula} (La Salle)</span>
+            <span>•</span>
+            <span className="whitespace-nowrap">Céd. Esp. {doctor.cedulaEspecialidad} (UADY)</span>
+            <span>•</span>
+            <span className="whitespace-nowrap">Céd. Subesp. {doctor.cedulaSubespecialidad} (UNAM)</span>
+          </div>
         </div>
 
         {/* ─── FOOTER NAVIGATION & CONTACT COLUMNS ────────────────────────────── */}
@@ -66,29 +70,32 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Col 2: Contacto & Dirección */}
+          {/* Col 2: Contacto & Ubicaciones */}
           <div>
             <h4 className="font-extrabold text-white text-xs uppercase tracking-widest mb-4 text-[#00A896]">
-              Consultorio & Urgencias
+              Ubicaciones de Consultorios
             </h4>
-            <ul className="space-y-3 text-xs">
-              <li className="flex items-start gap-2.5">
-                <FaMapMarkerAlt className="text-[#00A896] mt-0.5 flex-shrink-0" />
-                <span>{doctor.address}</span>
-              </li>
-              <li className="flex items-center gap-2.5">
+            <ul className="space-y-3.5 text-xs">
+              {doctor.locations?.map((loc) => (
+                <li key={loc.id} className="flex items-start gap-2.5">
+                  <FaMapMarkerAlt className="text-[#00A896] mt-0.5 flex-shrink-0" />
+                  <div>
+                    <span className="font-bold text-white block">{loc.name}</span>
+                    <span className="text-slate-400 text-[11px] block leading-relaxed">{loc.address}</span>
+                  </div>
+                </li>
+              ))}
+            </ul>
+            <div className="mt-4 pt-3 border-t border-slate-800 space-y-2 text-xs">
+              <div className="flex items-center gap-2.5">
                 <FaPhoneAlt className="text-[#00A896] flex-shrink-0" />
                 <a href={`tel:${doctor.phone}`} className="hover:text-[#00A896] font-bold transition-colors">{doctor.phone}</a>
-              </li>
-              <li className="flex items-center gap-2.5">
-                <FaWhatsapp className="text-[#00A896] flex-shrink-0" />
-                <a href={whatsappUrl} target="_blank" rel="noreferrer" className="hover:text-[#00A896] font-bold transition-colors">{doctor.whatsapp}</a>
-              </li>
-              <li className="flex items-center gap-2.5">
+              </div>
+              <div className="flex items-center gap-2.5">
                 <FaEnvelope className="text-[#00A896] flex-shrink-0" />
                 <a href={`mailto:${doctor.email}`} className="hover:text-[#00A896] transition-colors">{doctor.email}</a>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
 
           {/* Col 3: Sociedades Médicas */}
@@ -99,7 +106,9 @@ export default function Footer() {
             <div className="bg-[#0A192F] p-4 rounded-2xl border border-[#172A45] text-xs space-y-2">
               <p className="font-bold text-[#00A896]">• SMNYCT (Neumología y Cirugía de Tórax)</p>
               <p className="font-bold text-[#00A896]">• ALAT (Asociación Latinoamericana del Tórax)</p>
-              <p className="font-bold text-[#00A896]">• STS (Society of Thoracic Surgeons)</p>
+              <p className="font-bold text-[#00A896]">• ATS (American Thoracic Society)</p>
+              <p className="font-bold text-[#00A896]">• ERS (European Respiratory Society)</p>
+              <p className="font-bold text-[#00A896]">• SEPAR (Sociedad Española de Neumología)</p>
             </div>
             <div className="pt-1 text-[11px] text-slate-400">
               <p>Horarios de Atención: {doctor.schedule}</p>

@@ -41,24 +41,16 @@ export default function ServicesListPage() {
           <div className="bg-[#0A192F] text-white p-8 lg:p-12 rounded-[2.5rem] shadow-xl relative overflow-hidden border border-[#172A45]">
             <FaBriefcaseMedical className="absolute bottom-[-20px] right-[-20px] text-white/5 text-[220px] pointer-events-none" />
 
-            <div className="max-w-3xl relative z-10">
-              <span className="text-xs font-black uppercase tracking-widest text-[#00A896] bg-white/10 px-3.5 py-1 rounded-full border border-white/15 inline-block mb-3">
+            <div className="max-w-3xl mx-auto text-center flex flex-col items-center relative z-10">
+              <span className="text-xs font-black uppercase tracking-widest text-[#00A896] bg-white/10 px-4 py-1.5 rounded-full border border-white/15 inline-block mb-3">
                 Procedimientos de Alta Especialidad
               </span>
               <h1 className="text-3xl lg:text-5xl font-black text-white mb-4 leading-tight">
                 Cirugía de Tórax Mínimamente Invasiva (VATS)
               </h1>
-              <p className="text-slate-200 text-base lg:text-lg max-w-3xl leading-relaxed font-medium mb-6">
-                Tecnología quirúrgica de vanguardia mediante videoasistencia (VATS) e intervenciones de reconstrucción torácica de máxima precisión con dolor mínimo y rápida recuperación.
+              <p className="text-slate-200 text-base lg:text-lg max-w-2xl mx-auto leading-relaxed font-medium mb-2">
+                Tecnología quirúrgica de vanguardia aplicada por el {doctor.title} {doctor.name} mediante videoasistencia (VATS) e intervenciones de alta precisión con recuperación acelerada.
               </p>
-              <div className="flex flex-wrap gap-3 text-xs font-semibold text-slate-300">
-                <span className="bg-white/10 px-3 py-1 rounded-full border border-white/15">
-                  • Cirugía de Mínima Invasión
-                </span>
-                <span className="bg-white/10 px-3 py-1 rounded-full border border-white/15">
-                  • Estancia hospitalaria corta
-                </span>
-              </div>
             </div>
           </div>
         </section>

@@ -33,7 +33,7 @@ export const services: MedicalService[] = [
     },
     image: "/images/services/vats-cirugia.webp",
     seo: {
-      title: "Cirugía de Tórax Mínimamente Invasiva (VATS) en CDMX | Dr. Raúl David Vega Vivar",
+      title: "Cirugía de Tórax Mínimamente Invasiva (VATS) en CDMX | Dr. Raúl Vega",
       description: "Cirugía de tórax mínimamente invasiva (VATS) en CDMX e Interlomas. Menos dolor y rápida recuperación con cirujano torácico especialista.",
       keywords: ["cirugia de torax minimamente invasiva vats", "cirugia toracica vats cdmx", "vats pulmonar interlomas", "cirujano de torax minima invasion"]
     }
@@ -67,7 +67,7 @@ export const services: MedicalService[] = [
     },
     image: "/images/services/lobectomia.webp",
     seo: {
-      title: "Lobectomía Pulmonar y Cirugía Oncológica | Dr. Raúl David Vega Vivar",
+      title: "Lobectomía Pulmonar y Cirugía Oncológica | Dr. Raúl Vega",
       description: "Resección pulmonar y lobectomía por VATS en CDMX para cáncer de pulmón y tumores. Cirujano torácico certificado.",
       keywords: ["lobectomia pulmonar cdmx", "cirugia cancer de pulmon interlomas", "reseccion pulmonar vats", "cirujano oncologico toracico"]
     }
@@ -101,7 +101,7 @@ export const services: MedicalService[] = [
     },
     image: "/images/services/simpatectomia-vats.webp",
     seo: {
-      title: "Simpatectomía Torácica VATS para Hiperhidrosis | Dr. Raúl David Vega Vivar",
+      title: "Simpatectomía Torácica VATS para Hiperhidrosis | Dr. Raúl Vega",
       description: "Cirugía de sudoración excesiva en manos y axilas por VATS ambulatorio en CDMX. Resultados inmediatos con cirujano especialista.",
       keywords: ["simpatectomia toracica cdmx", "cirugia sudoracion manos interlomas", "vats hiperhidrosis ambulatoria", "tratamiento sudor palmar"]
     }
@@ -134,7 +134,7 @@ export const services: MedicalService[] = [
     },
     image: "/images/services/decorticacion-pleural.webp",
     seo: {
-      title: "Decorticación Pleural por VATS | Dr. Raúl David Vega Vivar",
+      title: "Decorticación Pleural por VATS | Dr. Raúl Vega",
       description: "Cirugía de liberación pulmonar en CDMX. Decorticación por VATS con cirujano torácico especialista en Interlomas.",
       keywords: ["decorticacion pleural cdmx", "decorticacion por vats", "limpieza de pleura", "cirujano pulmonar interlomas"]
     }
@@ -168,7 +168,7 @@ export const services: MedicalService[] = [
     },
     image: "/images/services/biopsia-vats.webp",
     seo: {
-      title: "Biopsia Pulmonar y Pleural por VATS en CDMX | Dr. Raúl David Vega Vivar",
+      title: "Biopsia Pulmonar y Pleural por VATS en CDMX | Dr. Raúl Vega",
       description: "Toma de biopsia de pulmón, pleura y mediastino por VATS en CDMX. Diagnóstico certero con cirujano torácico especialista.",
       keywords: ["biopsia pulmonar vats cdmx", "biopsia pleural minima invasion", "diagnostico nodulo pulmonar", "cirujano toracico cdmx"]
     }
@@ -202,7 +202,7 @@ export const services: MedicalService[] = [
     },
     image: "/images/services/timectomia-vats.webp",
     seo: {
-      title: "Timectomía Quirúrgica por VATS en CDMX | Dr. Raúl David Vega Vivar",
+      title: "Timectomía Quirúrgica por VATS en CDMX | Dr. Raúl Vega",
       description: "Extirpación de timo por VATS sin esternotomía para timoma y miastenia gravis en CDMX e Interlomas. Cirujano torácico experto.",
       keywords: ["timectomia por vats cdmx", "cirugia de timoma sin esternotomia", "miastenia gravis timectomia", "cirujano toracico interlomas"]
     }
@@ -235,7 +235,7 @@ export const services: MedicalService[] = [
     },
     image: "/images/services/traqueoplastia.webp",
     seo: {
-      title: "Resección Traqueal y Traqueoplastia en CDMX | Dr. Raúl David Vega Vivar",
+      title: "Resección Traqueal y Traqueoplastia en CDMX | Dr. Raúl Vega",
       description: "Cirugía de reconstrucción traqueal para estenosis post-intubación y tumores de vía aérea en CDMX. Cirujano torácico especialista.",
       keywords: ["reseccion traqueal cdmx", "traqueoplastia estenosis", "cirugia de via aerea alta", "retiro de traqueostomia cirugia"]
     }
@@ -268,7 +268,7 @@ export const services: MedicalService[] = [
     },
     image: "/images/services/plicatura-diafragma.webp",
     seo: {
-      title: "Plicatura Diafragmática por VATS en CDMX | Dr. Raúl David Vega Vivar",
+      title: "Plicatura Diafragmática por VATS en CDMX | Dr. Raúl Vega",
       description: "Cirugía de parálisis y eventración diafragmática por VATS en CDMX e Interlomas. Cirujano torácico especialista.",
       keywords: ["plicatura diafragmatica vats", "hernia diafragmatica cirugia cdmx", "paralisis del diafragma tratamiento", "cirujano toracico interlomas"]
     }
@@ -302,7 +302,7 @@ export const services: MedicalService[] = [
     },
     image: "/images/services/osteosintesis-costal.webp",
     seo: {
-      title: "Fijación de Fracturas Costales con Titanio | Dr. Raúl David Vega Vivar",
+      title: "Fijación de Fracturas Costales con Titanio | Dr. Raúl Vega",
       description: "Osteosíntesis y fijación de costillas rotas con placas de titanio en CDMX. Cirujano especializado en trauma torácico e Interlomas.",
       keywords: ["fijacion de fracturas costales cdmx", "placas de titanio costillas", "osteosintesis toracica cdmx", "cirugia trauma de torax"]
     }
@@ -334,7 +334,7 @@ export const services: MedicalService[] = [
     },
     image: "/images/services/pleurodesis.webp",
     seo: {
-      title: "Pleurodesis Pleural para Derrame y Neumotórax | Dr. Raúl David Vega Vivar",
+      title: "Pleurodesis Pleural para Derrame y Neumotórax | Dr. Raúl Vega",
       description: "Procedimiento de sellado pleural (pleurodesis por talco o VATS) para evitar reacumulación de líquido o neumotórax en CDMX.",
       keywords: ["pleurodesis con talco cdmx", "sellado pleural derrame maligno", "pleurodesis vats neumotorax", "cirujano toracico polanco"]
     }

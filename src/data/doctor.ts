@@ -1,7 +1,7 @@
 import { DoctorProfile } from "@/types/schema";
 
 export const doctor: DoctorProfile = {
-  name: "Raúl David Vega Vivar",
+  name: "Raúl Vega",
   title: "Dr.",
   specialty: "Cirugía General",
   specialistTitle: "Cirujano de Tórax",
@@ -10,10 +10,36 @@ export const doctor: DoctorProfile = {
   cedulaEspecialidad: "12463691",
   cedulaSubespecialidad: "14842215",
   cofepris: "En trámite",
-  phone: "5628395496",
-  whatsapp: "5628395496",
-  email: "contacto@drraulvega.com",
+  phone: "5668592519",
+  whatsapp: "5668592519",
+  email: "dr.raul.vega.vivar@icloud.com",
   address: "Hospital Ángeles Lomas, Vialidad de la Barranca S/N, Col. Hacienda de las Palmas, C.P. 52763, Huixquilucan, Edo. de México",
+  locations: [
+    {
+      id: "angeles-lomas",
+      name: "Consultorio Hospital Ángeles Lomas",
+      address: "Vialidad de la Barranca S/N, Col. Hacienda de las Palmas, C.P. 52763, Huixquilucan, Edo. de México",
+      city: "Huixquilucan / CDMX",
+      googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Hospital+Angeles+Lomas+Vialidad+de+la+Barranca+Hacienda+de+las+Palmas+52763+Huixquilucan",
+      mapEmbedUrl: "https://maps.google.com/maps?q=Hospital+Angeles+Lomas,+Vialidad+de+la+Barranca+S/N,+Hacienda+de+las+Palmas,+52763+Huixquilucan&t=&z=16&ie=UTF8&iwloc=&output=embed"
+    },
+    {
+      id: "angeles-pedregal",
+      name: "Consultorio Ángeles Pedregal",
+      address: "Camino a Santa Teresa 1055, Col. Héroes de Padierna, C.P. 10700, La Magdalena Contreras, CDMX",
+      city: "Ciudad de México (Sur)",
+      googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Hospital+Angeles+Pedregal+Camino+a+Santa+Teresa+1055",
+      mapEmbedUrl: "https://maps.google.com/maps?q=Hospital+Angeles+Pedregal,+Camino+a+Santa+Teresa+1055&t=&z=16&ie=UTF8&iwloc=&output=embed"
+    },
+    {
+      id: "starmedica-pedregal",
+      name: "Consultorio Star Médica Pedregal",
+      address: "Cda. de San Jerónimo 430, Col. Jardines del Pedregal, C.P. 01900, Álvaro Obregón, CDMX",
+      city: "Ciudad de México (Sur)",
+      googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Star+Medica+Pedregal+San+Jeronimo+430",
+      mapEmbedUrl: "https://maps.google.com/maps?q=Star+Medica+Pedregal,+Cda.+de+San+Jeronimo+430&t=&z=16&ie=UTF8&iwloc=&output=embed"
+    }
+  ],
   city: "Ciudad de México",
   state: "Estado de México / CDMX",
   country: "México",
@@ -22,9 +48,9 @@ export const doctor: DoctorProfile = {
   paymentMethods: ["Efectivo", "Transferencia", "Tarjeta de Débito", "Tarjeta de Crédito", "Pagos NFC", "Meses Sin Intereses (MSI)"],
   insurances: ["AXA Seguros", "GNP Seguros", "MetLife", "Monterrey New York Life", "Mapfre", "Seguros Banorte", "Bupa", "Allianz"],
   schedule: "Lunes a Viernes de 08:00 a 21:00 hrs. Sábados de 09:00 a 15:00 hrs.",
-  photo: "/images/doctor-raul-vega.webp",
+  photo: "/images/dr-hero.jpg",
   logo: "/images/logo/200743927_padded_logo.png",
-  bio: "Soy el Dr. Raúl David Vega Vivar, cirujano especializado en Cirugía General con subespecialidad en Cirugía Torácica. Mi práctica médica y quirúrgica en el Hospital Ángeles Lomas y Ciudad de México está dedicada a la Cirugía de Tórax de Mínima Invasión, así como al diagnóstico y tratamiento integral de patologías de pulmón, pleura, mediastino, tráquea y pared torácica con tecnología de vanguardia.",
+  bio: "Soy el Dr. Raúl Vega, cirujano especializado en Cirugía General con subespecialidad en Cirugía Torácica. Mi práctica médica y quirúrgica en la Ciudad de México está dedicada a la Cirugía de Tórax de Mínima Invasión, así como al diagnóstico y tratamiento integral de patologías de pulmón, pleura, mediastino, tráquea y pared torácica con tecnología de vanguardia.",
   philosophy: "Atención quirúrgica torácica de excelencia en Cirugía de Tórax de Mínima Invasión, priorizando la innovación tecnológica, el dolor mínimo, la rápida recuperación y un trato ético y humano.",
   experience: [
     {
@@ -48,22 +74,30 @@ export const doctor: DoctorProfile = {
       institution: "Asociación Latinoamericana del Tórax (ALAT)",
     },
     {
-      name: "Miembro Afiliado",
-      institution: "Sociedad de Cirujanos Torácicos Generales (The Society of Thoracic Surgeons - STS)",
+      name: "Miembro Internacional",
+      institution: "American Thoracic Society (ATS)",
+    },
+    {
+      name: "Miembro Internacional",
+      institution: "European Respiratory Society (ERS)",
+    },
+    {
+      name: "Miembro Internacional",
+      institution: "Sociedad Española de Neumología y Cirugía Torácica (SEPAR)",
     }
   ],
   education: [
     {
       degree: "Médico Cirujano",
-      institution: "Universidad La Salle • céd. prof. 9781625 (La Salle)",
+      institution: "Universidad La Salle • Céd. Prof. 9781625 (La Salle)",
     },
     {
       degree: "Especialidad en Cirugía General",
-      institution: "Universidad Autónoma de Yucatán • céd. esp. 12463691 (UADY)",
+      institution: "Universidad Autónoma de Yucatán • Céd. Esp. 12463691 (UADY)",
     },
     {
       degree: "Subespecialidad en Cirugía Torácica",
-      institution: "Universidad Nacional Autónoma de México • céd. subesp. 14842215 (UNAM)",
+      institution: "Universidad Nacional Autónoma de México • Céd. Subesp. 14842215 (UNAM)",
     }
   ],
   testimonials: [

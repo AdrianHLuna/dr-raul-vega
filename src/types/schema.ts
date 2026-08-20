@@ -51,6 +51,17 @@ const VideoSchema = z.object({
   uploadDate: z.string(),
 });
 
+export const ClinicLocationSchema = z.object({
+  id: z.string(),
+  name: z.string(),
+  address: z.string(),
+  city: z.string(),
+  googleMapsUrl: z.string().optional(),
+  mapEmbedUrl: z.string().optional(),
+});
+
+export type ClinicLocation = z.infer<typeof ClinicLocationSchema>;
+
 // ─── Doctor Profile ───────────────────────────────────────────
 export const DoctorProfileSchema = z.object({
   name: z.string(),
@@ -66,6 +77,7 @@ export const DoctorProfileSchema = z.object({
   whatsapp: z.string(),
   email: z.string().email().optional(),
   address: z.string(),
+  locations: z.array(ClinicLocationSchema).optional(),
   city: z.string(),
   state: z.string(),
   country: z.string(),

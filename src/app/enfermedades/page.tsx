@@ -41,24 +41,16 @@ export default function DiseasesListPage() {
           <div className="bg-[#0A192F] text-white p-8 lg:p-12 rounded-[2.5rem] shadow-xl relative overflow-hidden border border-[#172A45]">
             <FaLungs className="absolute bottom-[-20px] right-[-20px] text-white/5 text-[220px] pointer-events-none" />
 
-            <div className="max-w-3xl relative z-10">
-              <span className="text-xs font-black uppercase tracking-widest text-[#00A896] bg-white/10 px-3.5 py-1 rounded-full border border-white/15 inline-block mb-3">
+            <div className="max-w-3xl mx-auto text-center flex flex-col items-center relative z-10">
+              <span className="text-xs font-black uppercase tracking-widest text-[#00A896] bg-white/10 px-4 py-1.5 rounded-full border border-white/15 inline-block mb-3">
                 Especialidad Torácica
               </span>
               <h1 className="text-3xl lg:text-5xl font-black text-white mb-4 leading-tight">
                 Patologías de Tórax, Pulmón y Mediastino
               </h1>
-              <p className="text-slate-200 text-base lg:text-lg max-w-3xl leading-relaxed font-medium mb-6">
-                Diagnóstico clínico de precisión y abordaje quirúrgico especializado para 12 enfermedades principales de la cavidad torácica.
+              <p className="text-slate-200 text-base lg:text-lg max-w-2xl mx-auto leading-relaxed font-medium mb-2">
+                Diagnóstico clínico de precisión y abordaje quirúrgico especializado por el {doctor.title} {doctor.name} para 12 enfermedades principales de la cavidad torácica.
               </p>
-              <div className="flex flex-wrap gap-3 text-xs font-semibold text-slate-300">
-                <span className="bg-white/10 px-3 py-1 rounded-full border border-white/15">
-                  • Cero fármacos de patente en catálogo
-                </span>
-                <span className="bg-white/10 px-3 py-1 rounded-full border border-white/15">
-                  • Cirugía de Mínima Invasión
-                </span>
-              </div>
             </div>
           </div>
         </section>

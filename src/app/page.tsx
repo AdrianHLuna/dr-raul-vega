@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { doctor } from "@/data/doctor";
 import { diseases } from "@/data/diseases";
 import { services } from "@/data/services";
@@ -100,27 +101,32 @@ export default function Home() {
             <div className="absolute top-0 right-0 w-96 h-96 bg-[#00A896]/15 rounded-full blur-3xl pointer-events-none" />
             <FaLungs className="absolute bottom-[-30px] right-[-30px] text-white/5 text-[280px] pointer-events-none" />
 
-            <div>
-              <div className="flex flex-wrap items-center gap-3 mb-6">
+            <div className="flex flex-col items-center text-center">
+              <div className="flex flex-wrap items-center justify-center gap-3 mb-6">
                 <span className="px-4 py-1.5 rounded-full bg-[#00A896]/20 border border-[#00A896]/40 text-[#00A896] font-black text-xs uppercase tracking-widest flex items-center gap-2">
                   <FaLungs /> {doctor.specialistTitle}
                 </span>
-                <span className="px-3.5 py-1.5 rounded-full bg-white/10 text-slate-200 font-semibold text-xs border border-white/15">
-                  Hospital Ángeles Lomas
-                </span>
               </div>
 
-              <h1 className="text-4xl lg:text-6xl font-black leading-tight tracking-tight text-white mb-6">
-                Cirujano de Tórax <br className="hidden sm:block"/>
+              <h1 className="text-4xl lg:text-6xl font-black leading-tight tracking-tight text-white mb-2">
+                Cirujano de Tórax
               </h1>
 
-              <p className="text-base lg:text-xl text-slate-200 font-medium max-w-2xl leading-relaxed mb-8">
-                Diagnóstico de precisión y tratamiento quirúrgico de vanguardia con mínima invasión para cáncer de pulmón, derrame pleural, neumotórax, timoma e hiperhidrosis.
+              <h2 className="text-2xl lg:text-4xl font-extrabold text-[#00A896] mb-6">
+                Dr. Raúl Vega
+              </h2>
+
+              <p className="text-base lg:text-lg text-slate-200 font-medium max-w-2xl mx-auto leading-relaxed mb-6">
+                Diagnóstico y tratamiento quirúrgico especializado de cáncer y nódulos pulmonares, así como enfermedades de la pleura, mediastino, tráquea y pared torácica, con técnicas de mínima invasión.
+              </p>
+
+              <p className="text-xs sm:text-sm text-[#00A896] font-extrabold tracking-wide max-w-2xl mx-auto leading-relaxed mb-8 bg-[#00A896]/10 px-5 py-3 rounded-2xl border border-[#00A896]/30">
+                Cáncer de pulmón · Nódulos pulmonares · Derrame pleural · Neumotórax · Tumores del tórax · Enfermedades de la tráquea · Fracturas costales
               </p>
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-wrap items-center gap-4 pt-4 z-10">
+            <div className="flex flex-wrap items-center justify-center gap-4 pt-4 z-10">
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.98 }}
@@ -129,7 +135,7 @@ export default function Home() {
                 rel="noreferrer"
                 className="px-8 py-4 rounded-2xl bg-[#00A896] text-[#0A192F] font-black text-base flex items-center gap-3 hover:bg-[#02C39A] transition-all shadow-xl shadow-[#00A896]/20"
               >
-                <FaCalendarCheck size={18} /> Agendar Consulta
+                <FaCalendarCheck size={18} /> Agendar Cita
               </motion.a>
               <motion.a
                 whileHover={{ scale: 1.05 }}
@@ -137,7 +143,7 @@ export default function Home() {
                 href={`tel:${doctor.phone}`}
                 className="px-6 py-4 rounded-2xl bg-rose-600/20 text-rose-300 font-bold text-base flex items-center gap-2.5 border border-rose-500/30 hover:bg-rose-600/30 transition-all"
               >
-                <FaPhoneAlt size={16} className="text-rose-400 animate-pulse" /> Urgencias: {doctor.phone}
+                <FaPhoneAlt size={16} className="text-rose-400 animate-pulse" /> Atención Prioritaria: {doctor.phone}
               </motion.a>
             </div>
           </motion.div>
@@ -145,35 +151,41 @@ export default function Home() {
           {/* Right Doctor Spotlight Card (4-col) */}
           <motion.div 
             variants={fadeUp}
-            className="lg:col-span-4 bg-white rounded-[2.5rem] p-8 border border-slate-200/80 shadow-xl flex flex-col justify-between relative group overflow-hidden"
+            className="lg:col-span-4 bg-white rounded-[2.5rem] p-6 border border-slate-200/80 shadow-xl flex flex-col justify-between relative group overflow-hidden"
           >
-            <FaUserMd className="absolute top-[-10px] right-[-10px] text-slate-100 text-[180px] pointer-events-none" />
-
-            <div className="aspect-square rounded-2xl bg-gradient-to-tr from-[#0A192F] to-[#172A45] flex flex-col items-center justify-center p-6 text-center text-white relative overflow-hidden shadow-inner">
-              <motion.div 
-                animate={{ scale: [1, 1.08, 1] }} 
-                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                className="w-20 h-20 rounded-full bg-[#00A896]/20 border border-[#00A896]/40 flex items-center justify-center text-[#00A896] mb-4 shadow-lg"
-              >
-                <FaUserMd size={40} />
-              </motion.div>
-              <h2 className="font-black text-2xl text-white">
-                {doctor.title} {doctor.name}
-              </h2>
-              <p className="text-xs text-[#00A896] font-extrabold uppercase tracking-wider mt-1">
-                {doctor.specialistTitle}
-              </p>
-              <p className="text-xs text-slate-300 mt-2 font-medium">
-                céd. prof. 9781625 (La Salle) • céd. esp. 12463691 (UADY) • céd. subesp. 14842215 (UNAM)
-              </p>
+            <div className="aspect-[4/5] rounded-3xl overflow-hidden border-2 border-[#00A896]/40 shadow-2xl relative bg-[#0A192F] group-hover:scale-[1.01] transition-transform duration-500">
+              <Image
+                src={doctor.photo}
+                alt={`Fotografía Oficial - ${doctor.title} ${doctor.name}`}
+                fill
+                priority
+                sizes="(max-width: 768px) 100vw, 33vw"
+                className="object-cover object-top"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0A192F] via-[#0A192F]/20 to-transparent flex flex-col justify-end p-5 text-white">
+                <span className="px-3 py-1 rounded-full bg-[#00A896] text-[#0A192F] font-black text-[10px] uppercase tracking-widest self-start mb-1.5 shadow-md">
+                  Fotografía Oficial
+                </span>
+                <h2 className="font-black text-xl text-white drop-shadow-md">
+                  {doctor.title} {doctor.name}
+                </h2>
+                <p className="text-xs text-[#00A896] font-extrabold uppercase tracking-wider drop-shadow">
+                  {doctor.specialistTitle}
+                </p>
+                <div className="text-[10px] text-slate-200 mt-2 font-medium flex flex-wrap gap-x-2 gap-y-0.5">
+                  <span className="whitespace-nowrap">Céd. Prof. 9781625</span> •
+                  <span className="whitespace-nowrap">Céd. Esp. 12463691</span> •
+                  <span className="whitespace-nowrap">Céd. Subesp. 14842215</span>
+                </div>
+              </div>
             </div>
 
-            <div className="mt-6 space-y-3 relative z-10">
-              <div className="flex items-center justify-between p-3.5 rounded-xl bg-slate-50 border border-slate-100 text-xs font-bold text-slate-700">
+            <div className="mt-4 space-y-2.5 relative z-10">
+              <div className="flex items-center justify-between p-3 rounded-xl bg-slate-50 border border-slate-100 text-xs font-bold text-slate-700">
                 <span>Consulta Presencial:</span>
                 <span className="text-[#0A192F] font-black text-sm">${doctor.consultationPrice} MXN</span>
               </div>
-              <div className="flex items-center gap-2 text-xs text-emerald-800 font-semibold bg-emerald-50 p-3 rounded-xl border border-emerald-100">
+              <div className="flex items-center gap-2 text-xs text-emerald-800 font-semibold bg-emerald-50 p-2.5 rounded-xl border border-emerald-100">
                 <FaShieldAlt className="flex-shrink-0 text-emerald-600" />
                 <span>Meses Sin Intereses & Reembolso con Seguros</span>
               </div>
@@ -189,7 +201,7 @@ export default function Home() {
               { val: "+2,500", label: "Pacientes Atendidos" },
               { val: "+1,500", label: "Cirugías Realizadas" },
               { val: "6 Años", label: "Experiencia Quirúrgica" },
-              { val: "STS / ALAT / SMNYCT", label: "Miembro Activo Internacional" }
+              { val: "SMNYCT / ALAT / ATS", label: "Miembro Activo Internacional" }
             ].map((stat, idx) => (
               <motion.div 
                 key={idx}
@@ -221,32 +233,28 @@ export default function Home() {
               transition={{ duration: 0.6 }}
               className="lg:col-span-5 relative"
             >
-              <div className="aspect-[3/4] rounded-[2.5rem] bg-gradient-to-tr from-[#0A192F] via-[#172A45] to-slate-900 p-4 border-4 border-[#00A896]/40 shadow-2xl relative overflow-hidden group flex flex-col items-center justify-between text-center text-white">
-                
-                <div className="w-full h-full rounded-[2rem] bg-slate-950/60 border border-white/20 flex flex-col items-center justify-center p-6 relative overflow-hidden group-hover:scale-105 transition-transform duration-700">
-                  <motion.div 
-                    animate={{ y: [-4, 4, -4] }}
-                    transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-                    className="w-24 h-24 rounded-full bg-[#00A896]/20 border border-[#00A896] flex items-center justify-center text-[#00A896] mb-4 shadow-xl"
-                  >
-                    <FaUserMd size={48} />
-                  </motion.div>
-                  
-                  <span className="px-3.5 py-1 rounded-full bg-[#00A896] text-[#0A192F] font-black text-xs uppercase tracking-widest mb-2 shadow-md">
+              <div className="aspect-[3/4] rounded-[2.5rem] bg-[#0A192F] border-4 border-[#00A896]/40 shadow-2xl relative overflow-hidden group">
+                <Image
+                  src={doctor.photo}
+                  alt={`Fotografía Oficial del ${doctor.title} ${doctor.name}`}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 40vw"
+                  className="object-cover object-top group-hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0A192F] via-[#0A192F]/30 to-transparent flex flex-col justify-end p-6 text-white">
+                  <span className="px-3.5 py-1 rounded-full bg-[#00A896] text-[#0A192F] font-black text-xs uppercase tracking-widest self-start mb-2 shadow-md">
                     Fotografía Oficial
                   </span>
-                  
-                  <h3 className="font-black text-xl text-white">
+                  <h3 className="font-black text-2xl text-white">
                     {doctor.title} {doctor.name}
                   </h3>
-                  <p className="text-xs text-slate-300 font-semibold mt-1">
+                  <p className="text-xs text-[#00A896] font-extrabold uppercase tracking-wider">
                     {doctor.specialistTitle}
                   </p>
-
-                  <div className="mt-6 pt-4 border-t border-white/20 text-[11px] text-slate-300 font-medium space-y-1">
-                    <p>• céd. prof. 9781625 (La Salle)</p>
-                    <p>• céd. esp. 12463691 (UADY)</p>
-                    <p>• céd. subesp. 14842215 (UNAM)</p>
+                  <div className="mt-4 pt-3 border-t border-white/20 text-[11px] text-slate-200 font-medium space-y-0.5">
+                    <p className="whitespace-nowrap">• Céd. Prof. 9781625 (La Salle)</p>
+                    <p className="whitespace-nowrap">• Céd. Esp. 12463691 (UADY)</p>
+                    <p className="whitespace-nowrap">• Céd. Subesp. 14842215 (UNAM)</p>
                   </div>
                 </div>
 
@@ -261,7 +269,7 @@ export default function Home() {
                   </div>
                   <div>
                     <p className="font-black text-sm text-[#0A192F]">Cirugía de Tórax</p>
-                    <p className="text-[10px] font-bold text-slate-500 uppercase tracking-widest">STS • ALAT • SMNYCT</p>
+                    <p className="text-[10px] font-bold text-slate-500 uppercase tracking-widest">SMNYCT • ALAT • ATS • ERS • SEPAR</p>
                   </div>
                 </motion.div>
 
@@ -274,39 +282,39 @@ export default function Home() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="lg:col-span-7 space-y-8"
+              className="lg:col-span-7 space-y-8 text-center flex flex-col items-center"
             >
-              <div>
-                <span className="text-xs font-black uppercase tracking-widest text-[#00A896] bg-[#0A192F] px-3.5 py-1 rounded-full">
+              <div className="flex flex-col items-center text-center">
+                <span className="text-xs font-black uppercase tracking-widest text-[#00A896] bg-[#0A192F] px-4 py-1.5 rounded-full inline-block mb-3">
                   Trayectoria Médica & Quirúrgica
                 </span>
-                <h2 className="text-3xl lg:text-4xl font-black text-[#0A192F] mt-4 mb-4">
-                  Experiencia e Innovación en Cirugía de Tórax
+                <h2 className="text-3xl lg:text-4xl font-black text-[#0A192F] mb-4">
+                  Experiencia e Innovación en Cirugía de Tórax — {doctor.title} {doctor.name}
                 </h2>
-                <p className="text-slate-700 text-base leading-relaxed font-medium mb-4">
+                <p className="text-slate-700 text-base leading-relaxed font-medium mb-4 max-w-2xl">
                   "{doctor.bio}"
                 </p>
-                <p className="text-slate-600 text-sm leading-relaxed font-semibold italic bg-slate-50 p-4 rounded-xl border border-slate-200/60">
+                <p className="text-slate-600 text-sm leading-relaxed font-semibold italic bg-slate-50 p-4 rounded-xl border border-slate-200/60 max-w-2xl">
                   "{doctor.philosophy}"
                 </p>
               </div>
 
               {/* Formación y Certificaciones */}
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
-                <div className="bg-slate-50 p-4 rounded-2xl border border-slate-200/60">
-                  <FaUniversity className="text-[#00A896] text-xl mb-2" />
+                <div className="bg-slate-50 p-4 rounded-2xl border border-slate-200/60 text-center">
+                  <FaUniversity className="text-[#00A896] text-xl mb-2 mx-auto" />
                   <p className="font-extrabold text-xs text-slate-900">Médico Cirujano</p>
-                  <p className="text-[10px] text-slate-500 font-medium">céd. prof. 9781625 (La Salle)</p>
+                  <p className="text-[10px] text-slate-500 font-medium whitespace-nowrap">Céd. Prof. 9781625 (La Salle)</p>
                 </div>
-                <div className="bg-slate-50 p-4 rounded-2xl border border-slate-200/60">
-                  <FaUniversity className="text-[#00A896] text-xl mb-2" />
+                <div className="bg-slate-50 p-4 rounded-2xl border border-slate-200/60 text-center">
+                  <FaUniversity className="text-[#00A896] text-xl mb-2 mx-auto" />
                   <p className="font-extrabold text-xs text-slate-900">Cirugía General</p>
-                  <p className="text-[10px] text-slate-500 font-medium">céd. esp. 12463691 (UADY)</p>
+                  <p className="text-[10px] text-slate-500 font-medium whitespace-nowrap">Céd. Esp. 12463691 (UADY)</p>
                 </div>
-                <div className="bg-slate-50 p-4 rounded-2xl border border-slate-200/60">
-                  <FaUniversity className="text-[#00A896] text-xl mb-2" />
+                <div className="bg-slate-50 p-4 rounded-2xl border border-slate-200/60 text-center">
+                  <FaUniversity className="text-[#00A896] text-xl mb-2 mx-auto" />
                   <p className="font-extrabold text-xs text-slate-900">Cirugía Torácica</p>
-                  <p className="text-[10px] text-slate-500 font-medium">céd. subesp. 14842215 (UNAM)</p>
+                  <p className="text-[10px] text-slate-500 font-medium whitespace-nowrap">Céd. Subesp. 14842215 (UNAM)</p>
                 </div>
               </div>
             </motion.div>
@@ -318,18 +326,19 @@ export default function Home() {
 
       {/* ─── 3. DISEASES SECTION (12 ITEMS) ──────────────────────────────────── */}
       <section className="py-16 px-6 max-w-7xl mx-auto relative z-10">
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
-          <div>
-            <span className="text-xs font-black uppercase tracking-widest text-[#0A192F] bg-[#00A896]/20 px-3.5 py-1 rounded-full border border-[#00A896]/40">
-              Patologías Torácicas & Pulmonares
+        <div className="text-center max-w-3xl mx-auto mb-12 flex flex-col items-center">
+          <span className="text-xs font-black uppercase tracking-widest text-[#0A192F] bg-[#00A896]/20 px-4 py-1.5 rounded-full border border-[#00A896]/40 mb-3 inline-block">
+            Patologías Torácicas & Pulmonares
+          </span>
+          <h2 className="text-3xl lg:text-4xl font-black text-[#0A192F] mb-4 leading-tight">
+            Enfermedades que Atendemos <br />
+            <span className="block mt-1 text-2xl lg:text-3xl font-extrabold text-[#00A896]">
+              (12 Padecimientos Clave)
             </span>
-            <h2 className="text-3xl lg:text-4xl font-black text-[#0A192F] mt-3">
-              Enfermedades que Atendemos (12 Padecimientos Clave)
-            </h2>
-          </div>
+          </h2>
           <Link
             href="/enfermedades"
-            className="mt-4 md:mt-0 inline-flex items-center gap-2 font-black text-sm text-[#0A192F] hover:text-[#00A896] transition-colors"
+            className="inline-flex items-center gap-2 font-black text-sm text-[#0A192F] hover:text-[#00A896] transition-colors bg-white px-5 py-2.5 rounded-xl border border-slate-200 shadow-sm"
           >
             Ver catálogo completo <FaArrowRight size={14} />
           </Link>
@@ -340,19 +349,19 @@ export default function Home() {
             <motion.div
               key={d.id}
               whileHover={{ y: -6 }}
-              className="bg-white rounded-[2rem] p-6 border border-slate-200/80 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col justify-between group relative overflow-hidden"
+              className="bg-white rounded-[2rem] p-6 border border-slate-200/80 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col justify-between group relative overflow-hidden text-center"
             >
-              <div className="relative z-10">
-                <div className="flex items-center justify-between mb-3">
+              <div className="relative z-10 flex flex-col items-center">
+                <div className="flex items-center justify-center gap-2 mb-3">
                   <span className="px-3 py-1 rounded-full bg-slate-100 text-slate-700 font-extrabold text-[10px] uppercase">
                     Especialidad Torácica
                   </span>
                   <FaLungs className="text-[#00A896] text-base" />
                 </div>
-                <h3 className="text-xl font-black text-slate-900 mb-2 group-hover:text-[#0A192F] transition-colors">
+                <h3 className="text-xl font-black text-slate-900 mb-2 group-hover:text-[#0A192F] transition-colors text-center">
                   {d.name}
                 </h3>
-                <p className="text-slate-600 text-xs leading-relaxed mb-4 font-medium line-clamp-3">
+                <p className="text-slate-600 text-xs leading-relaxed mb-4 font-medium line-clamp-3 text-center">
                   {d.description}
                 </p>
               </div>
@@ -373,18 +382,16 @@ export default function Home() {
         <div className="bg-[#0A192F] text-white rounded-[2.5rem] p-8 lg:p-12 shadow-2xl relative overflow-hidden">
           <FaBriefcaseMedical className="absolute bottom-[-20px] right-[-20px] text-white/5 text-[220px] pointer-events-none" />
 
-          <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 relative z-10">
-            <div>
-              <span className="text-xs font-black uppercase tracking-widest text-[#00A896] bg-white/10 px-3.5 py-1 rounded-full border border-white/15">
-                Cirugías & Procedimientos
-              </span>
-              <h2 className="text-3xl lg:text-4xl font-black text-white mt-3">
-                Intervenciones Quirúrgicas Torácicas & Mínima Invasión
-              </h2>
-            </div>
+          <div className="text-center max-w-3xl mx-auto mb-12 flex flex-col items-center relative z-10">
+            <span className="text-xs font-black uppercase tracking-widest text-[#00A896] bg-white/10 px-4 py-1.5 rounded-full border border-white/15 mb-3 inline-block">
+              Cirugías & Procedimientos
+            </span>
+            <h2 className="text-3xl lg:text-4xl font-black text-white mb-4">
+              Intervenciones Quirúrgicas Torácicas & Mínima Invasión
+            </h2>
             <Link
               href="/servicios"
-              className="mt-4 md:mt-0 inline-flex items-center gap-2 font-black text-sm text-[#00A896] hover:text-white transition-colors"
+              className="inline-flex items-center gap-2 font-black text-sm text-[#00A896] hover:text-white transition-colors bg-white/10 px-5 py-2.5 rounded-xl border border-white/15"
             >
               Ver todas las cirugías <FaArrowRight size={14} />
             </Link>
@@ -395,24 +402,24 @@ export default function Home() {
               <motion.div
                 key={s.id}
                 whileHover={{ y: -6 }}
-                className="bg-[#172A45] rounded-[2rem] p-8 border border-[#00A896]/30 flex flex-col justify-between group hover:border-[#00A896] transition-all"
+                className="bg-[#172A45] rounded-[2rem] p-8 border border-[#00A896]/30 flex flex-col justify-between group hover:border-[#00A896] transition-all text-center"
               >
-                <div>
-                  <div className="flex items-center justify-between mb-4">
+                <div className="flex flex-col items-center">
+                  <div className="flex items-center justify-center mb-4">
                     <span className="px-3.5 py-1 rounded-full bg-[#00A896]/20 text-[#00A896] font-black text-xs uppercase tracking-wider">
                       {s.type}
                     </span>
                   </div>
-                  <h3 className="text-2xl font-black text-white mb-3">
+                  <h3 className="text-2xl font-black text-white mb-3 text-center">
                     {s.name}
                   </h3>
-                  <p className="text-slate-300 text-sm leading-relaxed mb-6 font-medium">
+                  <p className="text-slate-300 text-sm leading-relaxed mb-6 font-medium text-center">
                     {s.description}
                   </p>
 
-                  <ul className="space-y-2 mb-6">
+                  <ul className="space-y-2 mb-6 w-full flex flex-col items-center">
                     {s.benefits.slice(0, 3).map((b, idx) => (
-                      <li key={idx} className="flex items-center gap-2 text-xs text-emerald-200">
+                      <li key={idx} className="flex items-center justify-center gap-2 text-xs text-emerald-200">
                         <FaCheckCircle className="text-[#00A896] flex-shrink-0" />
                         <span>{b}</span>
                       </li>
@@ -434,18 +441,16 @@ export default function Home() {
 
       {/* ─── 5. SYMPTOMS FINDER SECTION (10 SYMPTOMS) ─────────────────────────── */}
       <section className="py-16 px-6 max-w-7xl mx-auto relative z-10">
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
-          <div>
-            <span className="text-xs font-black uppercase tracking-widest text-[#0A192F] bg-[#00A896]/20 px-3.5 py-1 rounded-full border border-[#00A896]/40">
-              Orientación al Paciente
-            </span>
-            <h2 className="text-3xl lg:text-4xl font-black text-[#0A192F] mt-3">
-              Síntomas Principales de Consulta Torácica
-            </h2>
-          </div>
+        <div className="text-center max-w-3xl mx-auto mb-12 flex flex-col items-center">
+          <span className="text-xs font-black uppercase tracking-widest text-[#0A192F] bg-[#00A896]/20 px-4 py-1.5 rounded-full border border-[#00A896]/40 mb-3 inline-block">
+            Orientación al Paciente
+          </span>
+          <h2 className="text-3xl lg:text-4xl font-black text-[#0A192F] mb-4">
+            Síntomas Principales de Consulta Torácica
+          </h2>
           <Link
             href="/sintomas"
-            className="mt-4 md:mt-0 inline-flex items-center gap-2 font-black text-sm text-[#0A192F] hover:text-[#00A896] transition-colors"
+            className="inline-flex items-center gap-2 font-black text-sm text-[#0A192F] hover:text-[#00A896] transition-colors bg-white px-5 py-2.5 rounded-xl border border-slate-200 shadow-sm"
           >
             Ver todos los síntomas <FaArrowRight size={14} />
           </Link>
@@ -453,23 +458,24 @@ export default function Home() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {symptoms.slice(0, 4).map((sym) => (
-            <div key={sym.id} className="bg-white p-8 rounded-[2rem] border border-slate-200/80 shadow-lg relative overflow-hidden">
+            <div key={sym.id} className="bg-white p-8 rounded-[2rem] border border-slate-200/80 shadow-lg relative overflow-hidden text-center flex flex-col justify-between">
               <FaHeartbeat className="absolute bottom-[-10px] right-[-10px] text-slate-100 text-[120px] pointer-events-none" />
 
-              <div className="relative z-10">
-                <h3 className="text-xl font-black text-slate-900 mb-3">{sym.name}</h3>
-                <p className="text-slate-600 text-sm leading-relaxed mb-6 font-medium">{sym.description}</p>
-                <div className="bg-slate-50 p-4 rounded-xl border border-slate-100 mb-6 text-xs text-slate-700">
+              <div className="relative z-10 flex flex-col items-center">
+                <h3 className="text-xl font-black text-slate-900 mb-3 text-center">{sym.name}</h3>
+                <p className="text-slate-600 text-sm leading-relaxed mb-6 font-medium text-center">{sym.description}</p>
+                <div className="bg-slate-50 p-4 rounded-xl border border-slate-100 mb-6 text-xs text-slate-700 text-center w-full">
                   <span className="font-extrabold text-[#0A192F] block mb-1">¿Por qué consultar con el especialista?</span>
                   {sym.whyConsult}
                 </div>
-                <Link
-                  href={`/sintomas/${sym.slug}`}
-                  className="inline-flex items-center gap-2 font-extrabold text-xs text-[#0A192F] uppercase tracking-wider hover:text-[#00A896] transition-colors"
-                >
-                  Leer orientación completa <FaArrowRight size={12} />
-                </Link>
               </div>
+
+              <Link
+                href={`/sintomas/${sym.slug}`}
+                className="inline-flex items-center justify-center gap-2 font-extrabold text-xs text-[#0A192F] uppercase tracking-wider hover:text-[#00A896] transition-colors relative z-10 py-2"
+              >
+                Leer orientación completa <FaArrowRight size={12} />
+              </Link>
             </div>
           ))}
         </div>
@@ -480,25 +486,25 @@ export default function Home() {
         <section className="py-16 px-6 max-w-7xl mx-auto relative z-10">
           <div className="bg-white rounded-[2.5rem] p-8 lg:p-12 border border-slate-200/80 shadow-xl text-center relative overflow-hidden">
             <div className="relative z-10">
-              <span className="text-xs font-black uppercase tracking-widest text-[#00A896] bg-[#0A192F] px-3.5 py-1 rounded-full">
+              <span className="text-xs font-black uppercase tracking-widest text-[#00A896] bg-[#0A192F] px-4 py-1.5 rounded-full inline-block mb-3">
                 Opiniones de Pacientes
               </span>
-              <h2 className="text-3xl lg:text-4xl font-black text-[#0A192F] mt-4 mb-12">
-                Testimonios de Experiencia Quirúrgica
+              <h2 className="text-3xl lg:text-4xl font-black text-[#0A192F] mb-12">
+                Testimonios de Experiencia Quirúrgica — {doctor.title} {doctor.name}
               </h2>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
                 {doctor.testimonials.map((t) => (
-                  <div key={t.id} className="bg-slate-50 p-8 rounded-2xl border border-slate-200/60 space-y-4">
-                    <div className="flex items-center gap-1 text-amber-400">
+                  <div key={t.id} className="bg-slate-50 p-8 rounded-2xl border border-slate-200/60 space-y-4 text-center flex flex-col items-center">
+                    <div className="flex items-center justify-center gap-1 text-amber-400">
                       {[...Array(t.rating)].map((_, i) => (
                         <FaStar key={i} />
                       ))}
                     </div>
-                    <p className="text-slate-700 text-sm leading-relaxed font-medium italic">
+                    <p className="text-slate-700 text-sm leading-relaxed font-medium italic text-center">
                       "{t.text}"
                     </p>
-                    <div className="pt-2 border-t border-slate-200 flex items-center justify-between text-xs">
+                    <div className="pt-2 border-t border-slate-200 flex items-center justify-between text-xs w-full">
                       <span className="font-bold text-slate-900">{t.patientName}</span>
                       <span className="text-slate-400">{t.date}</span>
                     </div>
@@ -512,47 +518,76 @@ export default function Home() {
 
       {/* ─── 7. LOCATION & CONTACT ───────────────────────────────────────────── */}
       <section className="py-16 px-6 max-w-7xl mx-auto relative z-10">
-        <div className="bg-[#0A192F] text-white rounded-[2.5rem] p-8 lg:p-12 border border-[#172A45] shadow-2xl grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative overflow-hidden">
+        <div className="bg-[#0A192F] text-white rounded-[2.5rem] p-8 lg:p-12 border border-[#172A45] shadow-2xl flex flex-col items-center text-center relative overflow-hidden">
           <FaMapMarkerAlt className="absolute top-[-30px] right-[-30px] text-white/5 text-[240px] pointer-events-none" />
 
-          <div className="lg:col-span-7 space-y-6 relative z-10">
-            <span className="px-3.5 py-1 rounded-full bg-[#00A896]/20 text-[#00A896] font-black text-xs uppercase tracking-widest">
-              Ubicación del Consultorio
+          <div className="max-w-3xl mx-auto space-y-6 relative z-10 mb-8 flex flex-col items-center">
+            <span className="px-4 py-1.5 rounded-full bg-[#00A896]/20 text-[#00A896] font-black text-xs uppercase tracking-widest inline-block border border-[#00A896]/40">
+              Ubicación del Consultorio & Citas
             </span>
             <h2 className="text-3xl lg:text-4xl font-black text-white">
-              Consultorio en Hospital Ángeles Lomas
+              Consultorio Presencial — {doctor.title} {doctor.name}
             </h2>
-            <div className="space-y-3 text-sm text-slate-200">
-              <p className="flex items-start gap-3">
-                <FaMapMarkerAlt className="text-[#00A896] text-lg mt-1 flex-shrink-0" />
+            <div className="space-y-3 text-sm text-slate-200 flex flex-col items-center max-w-xl mx-auto">
+              <p className="flex items-center justify-center gap-3">
+                <FaMapMarkerAlt className="text-[#00A896] text-lg flex-shrink-0" />
                 <span>{doctor.address}</span>
               </p>
-              <p className="flex items-center gap-3">
+              <p className="flex items-center justify-center gap-3">
                 <FaMoneyBillWave className="text-[#00A896] text-lg flex-shrink-0" />
                 <span>Precio Consulta Presencial: <strong>${doctor.consultationPrice} MXN</strong> (Meses Sin Intereses)</span>
               </p>
-              <p className="flex items-center gap-3">
+              <p className="flex items-center justify-center gap-3">
                 <FaCreditCard className="text-[#00A896] text-lg flex-shrink-0" />
                 <span>Métodos de Pago: {doctor.paymentMethods.join(", ")}</span>
               </p>
             </div>
           </div>
 
-          <div className="lg:col-span-5 bg-[#172A45] p-8 rounded-3xl border border-[#00A896]/30 text-center space-y-6 relative z-10">
-            <h3 className="font-black text-2xl text-white">¿Deseas una valoración?</h3>
-            <p className="text-xs text-slate-300 leading-relaxed">
-              Reserva tu cita presencial o solicita orientación médica para cirugía torácica con el {doctor.title} {doctor.name}.
-            </p>
-            <motion.a
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.98 }}
-              href={whatsappUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="w-full py-4 rounded-xl bg-[#00A896] text-[#0A192F] font-black text-sm uppercase tracking-wider flex items-center justify-center gap-2 hover:bg-[#02C39A] transition-all shadow-xl"
-            >
-              <FaWhatsapp size={18} /> Agendar Cita
-            </motion.a>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-4xl relative z-10">
+            {/* Box 1: Agendar Cita Regular */}
+            <div className="bg-[#172A45] p-8 rounded-3xl border border-[#00A896]/30 text-center space-y-4 flex flex-col justify-between">
+              <div>
+                <span className="px-3 py-1 rounded-full bg-[#00A896]/20 text-[#00A896] font-black text-[10px] uppercase tracking-widest inline-block mb-3">
+                  Consulta Presencial
+                </span>
+                <h3 className="font-black text-2xl text-white">¿Deseas una valoración médica?</h3>
+                <p className="text-xs text-slate-300 leading-relaxed mt-2">
+                  Reserva tu cita presencial o solicita orientación médica para cirugía torácica con el {doctor.title} {doctor.name}.
+                </p>
+              </div>
+              <motion.a
+                whileHover={{ scale: 1.03 }}
+                whileTap={{ scale: 0.98 }}
+                href={whatsappUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="w-full py-4 rounded-xl bg-[#00A896] text-[#0A192F] font-black text-xs uppercase tracking-wider flex items-center justify-center gap-2 hover:bg-[#02C39A] transition-all shadow-xl"
+              >
+                <FaWhatsapp size={18} /> Agendar Cita
+              </motion.a>
+            </div>
+
+            {/* Box 2: Valoración Torácica Prioritaria 24/7 */}
+            <div className="bg-gradient-to-br from-[#172A45] to-rose-950/40 p-8 rounded-3xl border border-rose-500/40 text-center space-y-4 flex flex-col justify-between">
+              <div>
+                <span className="px-3 py-1 rounded-full bg-rose-500/20 text-rose-300 border border-rose-500/40 font-black text-[10px] uppercase tracking-widest inline-block mb-3 animate-pulse">
+                  VALORACIÓN TORÁCICA PRIORITARIA 24/7
+                </span>
+                <h3 className="font-black text-xl text-white">¿Presenta una urgencia torácica?</h3>
+                <p className="text-xs text-slate-200 leading-relaxed mt-2 font-medium">
+                  Atención prioritaria para urgencias y problemas torácicos.
+                </p>
+              </div>
+              <motion.a
+                whileHover={{ scale: 1.03 }}
+                whileTap={{ scale: 0.98 }}
+                href={`tel:${doctor.phone}`}
+                className="w-full py-4 rounded-xl bg-rose-600 text-white font-black text-xs uppercase tracking-wider flex items-center justify-center gap-2 hover:bg-rose-500 transition-all shadow-xl"
+              >
+                <FaPhoneAlt size={16} /> Atención Prioritaria 24/7: {doctor.phone}
+              </motion.a>
+            </div>
           </div>
 
         </div>

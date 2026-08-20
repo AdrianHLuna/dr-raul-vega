@@ -92,7 +92,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
                   rel="noreferrer"
                   className="px-6 py-3.5 rounded-2xl bg-[#00A896] text-[#0A192F] font-black text-xs uppercase tracking-wider hover:bg-[#02C39A] transition-all shadow-xl inline-flex items-center gap-2"
                 >
-                  <FaCalendarCheck size={16} /> Solicitar Valoración para {service.name}
+                  <FaCalendarCheck size={16} /> Agendar Cita
                 </a>
               </div>
             </div>
@@ -170,7 +170,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
                 ¿Requieres {service.name}?
               </h3>
               <p className="text-slate-300 text-xs leading-relaxed">
-                Agenda tu valoración presencial en Interlomas con el {doctor.title} {doctor.name}.
+                Agenda tu valoración presencial con el {doctor.title} {doctor.name}.
               </p>
 
               <div className="pt-2 space-y-3">

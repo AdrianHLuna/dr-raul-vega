@@ -5,18 +5,18 @@ export const symptoms: Symptom[] = [
     id: "dolor-toracico-persistente",
     slug: "dolor-toracico-persistente",
     name: "Dolor Torácico Persistente o Intenso",
-    description: "Dolor opresivo, punzante o localizado en el tórax que empeora al respirar hondo, toser o cambiar de posición, o que persiste por semanas.",
+    description: "Dolor opresivo, punzante o localizado en el tórax que empeora al respirar profundamente, toser o cambiar de posición, o que persiste por semanas.",
     causes: [
       "Irritación o inflamación de las capas pleurales (pleuritis / derrame pleural)",
       "Fracturas costales o trauma de la pared torácica",
       "Procesos tumorales pulmonares o del mediastino que invaden pleura o hueso",
       "Neumotórax con colapso pulmonar activo"
     ],
-    whyConsult: "El dolor de tórax persistente no debe ignorarse ni tratarse solo con analgésicos. Se requiere una tomografía de tórax de alta resolución y la valoración del cirujano torácico para descartar afecciones pleuro-pulmonares o vasculares de significación médica.",
+    whyConsult: "El dolor de tórax persistente no debe ignorarse ni tratarse solo con analgésicos. Se requiere una tomografía de tórax de alta resolución y la valoración del cirujano torácico para descartar afecciones pleuro-pulmonares de significación médica.",
     relatedConditions: ["derrame-pleural-empiema", "neumotorax-espontaneo-bullas", "trauma-toracico-fracturas-costales"],
     image: "/images/symptoms/dolor-toracico.webp",
     seo: {
-      title: "Dolor Torácico Persistente e Intenso en CDMX | Dr. Raúl David Vega Vivar",
+      title: "Dolor Torácico Persistente e Intenso en CDMX | Dr. Raúl Vega",
       description: "Evaluación médica especializada para dolor de pecho y pleura en CDMX e Interlomas. Diagnóstico preciso por cirujano torácico.",
       keywords: ["dolor toracico cdmx", "dolor al respirar hondo", "dolor pleuritico diagnostico", "cirujano toracico interlomas"]
     }
@@ -25,18 +25,18 @@ export const symptoms: Symptom[] = [
     id: "falta-de-aire-disnea",
     slug: "falta-de-aire-disnea",
     name: "Falta de Aire (Disnea) de Reposo o Esfuerzo",
-    description: "Sensación subjetiva de sofocación, sed de aire o dificultad respiratoria progresiva al realizar actividades cotidianas o al estar acostado.",
+    description: "Sensación de falta de aire, dificultad para respirar o respiración limitada, que puede aparecer o progresar al realizar actividades cotidianas o al estar acostado.",
     causes: [
       "Compresión o reducción del volumen pulmonar por derrame pleural o neumotórax",
       "Obstrucción de la vía aérea alta por estenosis traqueal o tumores de tráquea",
       "Neoplasias pulmonares o mediastinales avanzadas",
       "Parálisis o elevación anormal del diafragma"
     ],
-    whyConsult: "La disnea progresiva es el síntoma cardinal de que el pulmón está comprimido o la vía aérea está estrechada. La valoración quirúrgica torácica identifica si existe una causa corregible mediante drenaje, VATS o reconstrucción traqueal.",
+    whyConsult: "La dificultad respiratoria progresiva puede estar relacionada con alteraciones del pulmón, la pleura o las vías respiratorias. La valoración por un cirujano de tórax permite identificar la causa y determinar si existe una opción de tratamiento mediante drenaje pleural, cirugía de mínima invasión (VATS) u otros procedimientos torácicos especializados.",
     relatedConditions: ["cancer-de-pulmon", "derrame-pleural-empiema", "estenosis-traqueal-tumores-traquea", "hernia-diafragmatica-eventracion"],
     image: "/images/symptoms/disnea-falta-aire.webp",
     seo: {
-      title: "Falta de Aire y Sofocación Respiratoria | Dr. Raúl David Vega Vivar",
+      title: "Falta de Aire y Sofocación Respiratoria | Dr. Raúl Vega",
       description: "Diagnóstico y tratamiento para la disnea y falta de aire severa en CDMX. Evaluación por cirujano torácico especialista.",
       keywords: ["falta de aire cdmx", "disnea progresiva causas", "dificultad para respirar torax", "cirujano pulmonar interlomas"]
     }
@@ -44,19 +44,19 @@ export const symptoms: Symptom[] = [
   {
     id: "tos-con-sangre-hemoptisis",
     slug: "tos-con-sangre-hemoptisis",
-    name: "Tos con Sangre (Hemoptisis) o Esputo Asalmonado",
-    description: "Expulsión de sangre fresca, en hilos o esputo sanguinolento proveniente del árbol traqueobronquial o pulmones durante los accesos de tos.",
+    name: "Tos con Sangre (Hemoptisis)",
+    description: "Expulsión de sangre fresca, en pequeñas cantidades o mezclada con secreciones, proveniente de las vías respiratorias o los pulmones durante la tos.",
     causes: [
       "Cáncer de pulmón o tumores endobronquiales erosionantes",
       "Bronquiectasias infectadas o micetoma pulmonar (bola de hongo)",
       "Tuberculosis o infecciones supurativas crónicas",
       "Trauma de vía aérea o fístula bronquial"
     ],
-    whyConsult: "La hemoptisis es un signo de alarma médica prioritaria. Incluso pequeñas cantidades de sangre pueden preceder a un sangrado masivo amenazante para la vida, por lo que requiere tomografía urgente y valoración torácica especial.",
+    whyConsult: "La hemoptisis es un signo de alarma que requiere valoración médica. La presencia de sangre al toser puede estar relacionada con diversas enfermedades pulmonares y, dependiendo de su cantidad y causa, requerir estudios de imagen y valoración especializada para establecer el diagnóstico y tratamiento adecuados.",
     relatedConditions: ["cancer-de-pulmon", "absceso-pulmonar-bronquiectasias", "infecciones-pulmonares-tuberculosis"],
     image: "/images/symptoms/hemoptisis.webp",
     seo: {
-      title: "Tos con Sangre (Hemoptisis) en CDMX | Dr. Raúl David Vega Vivar",
+      title: "Tos con Sangre (Hemoptisis) en CDMX | Dr. Raúl Vega",
       description: "Evaluación urgente para tos con sangre y esputo sangriento en CDMX. Cirujano torácico especialista en hemoptisis y tumores.",
       keywords: ["tos con sangre cdmx", "hemoptisis causas tratamiento", "sangrado al toser pulmones", "cirujano toracico urgencias"]
     }
@@ -71,11 +71,11 @@ export const symptoms: Symptom[] = [
       "Granulomas calcificados por infecciones previas curadas",
       "Quistes, hamartomas benignos o metástasis solitarias"
     ],
-    whyConsult: "Todo nódulo pulmonar recién descubierto debe evaluarse con escalas de probabilidad clínica oncológica (como la escala Brock o Mayo). El cirujano torácico determina si requiere seguimiento tomográfico o biopsia por VATS.",
+    whyConsult: "Todo nódulo pulmonar recién descubierto debe evaluarse con escalas de probabilidad clínica oncológica. El cirujano torácico determina si requiere seguimiento tomográfico o biopsia por VATS.",
     relatedConditions: ["cancer-de-pulmon", "enfermedades-intersticiales-biopsia"],
     image: "/images/symptoms/nodulo-pulmonar.webp",
     seo: {
-      title: "Nódulo Pulmonar en Tomografía en CDMX | Dr. Raúl David Vega Vivar",
+      title: "Nódulo Pulmonar en Tomografía en CDMX | Dr. Raúl Vega",
       description: "Evaluación y tratamiento de nódulo pulmonar en TAC. Biopsia por VATS y estadificación en CDMX e Interlomas con cirujano especializado.",
       keywords: ["nodulo pulmonar tac cdmx", "mancha en pulmon radiografia", "biopsia nodulo pulmonar vats", "cirujano toracico polanco"]
     }
@@ -93,7 +93,7 @@ export const symptoms: Symptom[] = [
     relatedConditions: ["hiperhidrosis-primaria", "cirugia-toracica-vats-videoasistida"],
     image: "/images/symptoms/sudoracion-manos.webp",
     seo: {
-      title: "Sudoración Excesiva de Manos y Axilas | Dr. Raúl David Vega Vivar",
+      title: "Sudoración Excesiva de Manos y Axilas | Dr. Raúl Vega",
       description: "Tratamiento definitivo para hiperhidrosis palmar y axilar mediante simpatectomía por VATS en CDMX. Consulta con cirujano especialista.",
       keywords: ["sudoracion excesiva manos cdmx", "sudor palmar cura definitiva", "hiperhidrosis tratamiento vats", "cirujano toracico interlomas"]
     }
@@ -112,7 +112,7 @@ export const symptoms: Symptom[] = [
     relatedConditions: ["tumores-mediastino-timoma", "quistes-mediastinales"],
     image: "/images/symptoms/masa-mediastinal.webp",
     seo: {
-      title: "Tumores y Masas Mediastinales en CDMX | Dr. Raúl David Vega Vivar",
+      title: "Tumores y Masas Mediastinales en CDMX | Dr. Raúl Vega",
       description: "Evaluación y cirugía por VATS de masas y tumores del mediastino en CDMX. Cirujano torácico experto en Interlomas.",
       keywords: ["tumor mediastino cdmx", "masa mediastinal tac", "timoma cirugia vats", "cirujano toracico interlomas"]
     }
@@ -130,7 +130,7 @@ export const symptoms: Symptom[] = [
     relatedConditions: ["trauma-toracico-fracturas-costales", "osteosintesis-costal-fijacion-fracturas"],
     image: "/images/symptoms/fractura-costilla.webp",
     seo: {
-      title: "Dolor por Fractura de Costilla en CDMX | Dr. Raúl David Vega Vivar",
+      title: "Dolor por Fractura de Costilla en CDMX | Dr. Raúl Vega",
       description: "Tratamiento quirúrgico con placas de titanio para fracturas costales dolorosas en CDMX. Cirujano torácico en trauma.",
       keywords: ["fractura de costilla dolor cdmx", "fijacion costal placas titanio", "torax inestable cirugia", "trauma toracico interlomas"]
     }
@@ -148,7 +148,7 @@ export const symptoms: Symptom[] = [
     relatedConditions: ["estenosis-traqueal-tumores-traquea", "reseccion-traqueal-traqueoplastia"],
     image: "/images/symptoms/estridor-traqueal.webp",
     seo: {
-      title: "Estridor y Estenosis Traqueal en CDMX | Dr. Raúl David Vega Vivar",
+      title: "Estridor y Estenosis Traqueal en CDMX | Dr. Raúl Vega",
       description: "Diagnóstico y cirugía de urgencia para estridor respiratorio y estenosis traqueal en CDMX. Cirujano especializado en vía aérea.",
       keywords: ["estridor inspiratorio causas", "estenosis traqueal cdmx", "ahogo por intubación previa", "cirujano de via aerea"]
     }
@@ -167,7 +167,7 @@ export const symptoms: Symptom[] = [
     relatedConditions: ["cancer-de-pulmon", "absceso-pulmonar-bronquiectasias", "infecciones-pulmonares-tuberculosis"],
     image: "/images/symptoms/tos-cronica.webp",
     seo: {
-      title: "Tos Crónica Persistente en CDMX | Dr. Raúl David Vega Vivar",
+      title: "Tos Crónica Persistente en CDMX | Dr. Raúl Vega",
       description: "Evaluación médica de tos persistente de más de 8 semanas en CDMX. Tomografía y diagnóstico por cirujano torácico.",
       keywords: ["tos cronica causas cdmx", "tos persistente 8 semanas", "evaluación tos fumadores", "cirujano pulmonar interlomas"]
     }
@@ -185,7 +185,7 @@ export const symptoms: Symptom[] = [
     relatedConditions: ["derrame-pleural-empiema", "decorticacion-pleural-empiema"],
     image: "/images/symptoms/infeccion-pleural.webp",
     seo: {
-      title: "Agua o Pus en el Tórax (Empiema) | Dr. Raúl David Vega Vivar",
+      title: "Agua o Pus en el Tórax (Empiema) | Dr. Raúl Vega",
       description: "Drenaje quirúrgico y debridación de pus en la pleura en CDMX. Limpieza por VATS con cirujano torácico experto.",
       keywords: ["pus en el torax empiema", "agua en los pulmones tratamiento", "drenaje pleural cdmx", "cirujano toracico polanco"]
     }
