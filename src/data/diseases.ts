@@ -45,7 +45,7 @@ export const diseases: MedicalCondition[] = [
         answer: "La técnica VATS permite realizar resecciones pulmonares complejas a través de incisiones milimétricas sin separar costillas, lo que reduce drásticamente el dolor postoperatorio, acorta la estancia hospitalaria y acelera la incorporación a las actividades diarias."
       }
     ],
-    image: "/images/diseases/cancer-pulmon.webp",
+    image: "/enfermedades/cancer-pulmon.jpg",
     seo: {
       title: "Cirugía de Cáncer de Pulmón en CDMX | Dr. Raúl Vega",
       description: "Cirujano torácico especialista en cirugía oncológica pulmonar por VATS mínimamente invasiva en CDMX e Interlomas. Diagnóstico y lobectomía.",
@@ -96,7 +96,7 @@ export const diseases: MedicalCondition[] = [
         answer: "El procedimiento se realiza bajo anestesia local o sedación profunda supervisada, asegurando analgesia adecuada y alivio inmediato de la disnea."
       }
     ],
-    image: "/images/diseases/derrame-pleural.webp",
+    image: "/enfermedades/derrame-pleural.jpg",
     seo: {
       title: "Derrame Pleural y Empiema Pleural en CDMX | Dr. Raúl Vega",
       description: "Tratamiento quirúrgico para derrame pleural y empiema en CDMX. Toracostomía, decorticación por VATS y pleurodesis con cirujano torácico.",
@@ -147,7 +147,7 @@ export const diseases: MedicalCondition[] = [
         answer: "Se debe evitar viajar en avión hasta contar con alta médica definitiva y resolución tomográfica completa, generalmente entre 4 y 6 semanas post-resolución."
       }
     ],
-    image: "/images/diseases/neumotorax.webp",
+    image: "/enfermedades/neumotorax-expontaneo.jpg",
     seo: {
       title: "Neumotórax Espontáneo y Cirugía de Bullas | Dr. Raúl Vega",
       description: "Tratamiento definitivo para neumotórax espontáneo y bullas pulmonares en CDMX. Bullectomía y pleurodesis por VATS con cirujano torácico.",
@@ -197,7 +197,7 @@ export const diseases: MedicalCondition[] = [
         answer: "Actualmente, la gran mayoría de los timomas estadios I y II se operan por VATS a través de pequeñas incisiones intercostales, evitando la esternotomía media tradicional."
       }
     ],
-    image: "/images/diseases/timoma-mediastino.webp",
+    image: "/enfermedades/tumores-mediastino.jpg",
     seo: {
       title: "Tumores del Mediastino y Timectomía por VATS | Dr. Raúl Vega",
       description: "Cirugía especializada de tumores mediastinales y timectomía por VATS para timoma y miastenia gravis en CDMX. Cirujano torácico en Interlomas.",
@@ -246,7 +246,7 @@ export const diseases: MedicalCondition[] = [
         answer: "Es un efecto secundario en el cual el cuerpo redistribuye el sudor hacia la espalda o abdomen. Con las técnicas modernas de interrupción ganglionar seleccionada (T3-T4), este efecto es leve y tolerable."
       }
     ],
-    image: "/images/diseases/hiperhidrosis.webp",
+    image: "/enfermedades/hiperhidrosis-palmar.jpg",
     seo: {
       title: "Simpatectomía Torácica para Hiperhidrosis | Dr. Raúl Vega",
       description: "Solución definitiva para la sudoración excesiva en manos y axilas mediante simpatectomía torácica por VATS en CDMX e Interlomas. Cirujano especializado.",
@@ -296,7 +296,7 @@ export const diseases: MedicalCondition[] = [
         answer: "Restaura la anatomía y mecánica respiratoria inmediatamente, reduce el dolor drásticamente, disminuye días de ventilador en terapia intensiva y evita secuelas dolorosas crónicas."
       }
     ],
-    image: "/images/diseases/trauma-toracico.webp",
+    image: "/enfermedades/traumatismo-torax.jpg",
     seo: {
       title: "Fijación de Fracturas Costales y Trauma de Tórax | Dr. Raúl Vega",
       description: "Cirugía especializada para fracturas costales, tórax inestable y traumatismo torácico en CDMX. Osteosíntesis con placas de titanio y VATS.",
@@ -304,53 +304,52 @@ export const diseases: MedicalCondition[] = [
     }
   },
   {
-    id: "enfermedades-intersticiales-biopsia",
-    slug: "enfermedades-intersticiales-biopsia",
-    name: "Enfermedades Intersticiales Pulmonares (Biopsia Por VATS)",
-    technicalName: "Neumopatía Intersticial Difusa (NID) / Fibrosis Pulmonar",
-    description: "Grupo heterogéneo de padecimientos que provocan inflamación o cicatrización (fibrosis) progresiva del intersticio pulmonar. Requieren biopsia tisular para diagnóstico histopatológico preciso.",
+    id: "deformidades-toracicas-pectus",
+    slug: "deformidades-toracicas-pectus",
+    name: "Deformidades Torácicas (Pectus Excavatum y Carinatum)",
+    technicalName: "Pectus Excavatum / Pectus Carinatum / Deformidad Torácica Congénita",
+    description: "Alteraciones estructurales en el desarrollo del esternón y cartílagos costales que provocan depresión (pecho hundido) o prominencia (pecho en quilla), afectando la mecánica respiratoria, función cardíaca y calidad de vida.",
     symptoms: [
-      "Disnea de esfuerzo que empeora de forma paulatina",
-      "Tos seca y persistente sin expectoración",
-      "Acropaquia (deformidad en palillo de tambor en las uñas de los dedos)",
-      "Cansancio crónico y estertores crepitantes tipo 'Velcro' a la auscultación"
+      "Hundimiento prominente del esternón (Pectus Excavatum) o protrusión anterior (Pectus Carinatum)",
+      "Intolerancia al ejercicio, disnea de esfuerzo y palpitaciones",
+      "Dolor torácico o molestia en la pared anterior del tórax",
+      "Impacto psicológico, postura encorvada e incomodidad estética"
     ],
     causes: [
-      "Enfermedades autoinmunes y del tejido conectivo (esclerodermia, lupus, AR)",
-      "Exposición a polvos orgánicos, inorgánicos o hipersensibilidad",
-      "Fibrosis Pulmonar Idiopática (causa desconocida)"
+      "Crecimiento desproporcionado o anómalo de los cartílagos costales",
+      "Predisposición genética y alteraciones del tejido conectivo (síndrome de Marfan, Ehlers-Danlos)"
     ],
     riskFactors: [
-      "Exposición a aves, moho, asbesto o polvos industriales",
-      "Tabaquismo previo o antecedentes familiares de fibrosis"
+      "Antecedentes familiares de deformidades de la pared torácica",
+      "Crecimiento acelerado durante la pubertad y adolescencia"
     ],
-    mexicoStats: "La biopsia pulmonar por VATS es la prueba de referencia ('Gold Standard') cuando los estudios tomográficos y de laboratorio no son concluyentes.",
+    mexicoStats: "El Pectus Excavatum representa más del 80% de las deformidades congénitas de la pared torácica atendidas por cirujanos de tórax.",
     complications: [
-      "Hipertensión arterial pulmonar e insuficiencia cardíaca derecha (Cor Pulmonale)",
-      "Exacerbación aguda de la fibrosis pulmonar",
-      "Insuficiencia respiratoria crónico-degenerativa"
+      "Compresión o desplazamiento cardíaco hacia el hemotórax izquierdo",
+      "Patrón ventilatorio restrictivo con disminución de la capacidad pulmonar",
+      "Secuelas psicológicas y aislamiento afectivo en adolescentes y jóvenes"
     ],
     treatments: [
-      "Biopsia pulmonar quirúrgica asistida por video (VATS) para obtención de muestras en múltiples lóbulos",
-      "Procedimiento ambulatorio o de corta estancia con incisiones de 1 a 2 cm",
-      "Coordinación estrecha con neumología e histopatología especializada",
-      "Cuidados postoperatorios de preservación funcional pulmonar"
+      "Corrección quirúrgica de mínima invasión (Procedimiento de Nuss / MIRPE)",
+      "Resección condroesternal y plastia de pared torácica (Técnica de Ravitch modificada)",
+      "Evaluación preoperatoria con tomografía de tórax e Índice de Haller",
+      "Seguimiento multidisciplinario con rehabilitación cardiopulmonar"
     ],
     faqs: [
       {
-        question: "¿Por qué es necesaria la biopsia si ya tengo tomografía?",
-        answer: "Existen más de 200 tipos de enfermedades intersticiales. Muchas se ven similares en TAC, pero requieren tratamientos completamente distintos (inmunosupresores vs antifibróticos). La biopsia da el diagnóstico histológico exacto."
+        question: "¿A qué edad es recomendable evaluar o corregir un Pectus Excavatum?",
+        answer: "La evaluación por el cirujano torácico debe realizarse en cuanto se detecte. El momento óptimo para la corrección quirúrgica mínimamente invasiva (técnica de Nuss) suele ser entre los 12 y 18 años, aunque también se realiza con éxito en adultos jóvenes."
       },
       {
-        question: "¿Es segura la biopsia pulmonar por VATS?",
-        answer: "Sí, es un procedimiento altamente seguro cuando lo realiza un cirujano torácico calificado, permitiendo tomar muestras óptimas con mínimo riesgo y rápida recuperación."
+        question: "¿En qué consiste la técnica de Nuss?",
+        answer: "Es un procedimiento de mínima invasión que coloca una o dos barras de titanio precurvadas por detrás del esternón mediante videotoracoscopia para elevar la depresión sin cortar huesos ni cartílagos."
       }
     ],
-    image: "/images/diseases/intersticial-biopsia.webp",
+    image: "/enfermedades/deformidades-toracicas.jpg",
     seo: {
-      title: "Biopsia Pulmonar por VATS en CDMX | Dr. Raúl Vega",
-      description: "Diagnóstico preciso de enfermedades intersticiales y fibrosis pulmonar mediante biopsia quirúrgica por VATS mínimamente invasiva en CDMX.",
-      keywords: ["biopsia pulmonar vats cdmx", "enfermedades intersticiales diagnostico", "fibrosis pulmonar biopsia", "cirujano toracico polanco"]
+      title: "Cirugía de Pectus Excavatum y Deformidades Torácicas | Dr. Raúl Vega",
+      description: "Tratamiento quirúrgico especializado para Pectus Excavatum y Carinatum en CDMX e Interlomas. Técnica de Nuss y Ravitch con cirujano torácico.",
+      keywords: ["pectus excavatum cirugia cdmx", "procedimiento de nuss cdmx", "deformidades toracicas tratamiento", "cirujano toracico interlomas"]
     }
   },
   {
@@ -396,7 +395,7 @@ export const diseases: MedicalCondition[] = [
         answer: "El síntoma cardinal es el estridor (silbido en el cuello al respirar) junto con falta de aire progresiva en alguien que estuvo intubado semanas antes."
       }
     ],
-    image: "/images/diseases/estenosis-traqueal.webp",
+    image: "/enfermedades/estenosis-traqueal.jpg",
     seo: {
       title: "Cirugía de Estenosis Traqueal y Tráquea en CDMX | Dr. Raúl Vega",
       description: "Reconstrucción y resección de estenosis traqueal post-intubación y tumores de tráquea en CDMX e Interlomas. Cirujano torácico especialista.",
@@ -443,7 +442,7 @@ export const diseases: MedicalCondition[] = [
         answer: "Al realizarse mediante técnicas mínimamente invasivas (VATS), los riesgos son bajos y el tiempo de internamiento suele ser de solo 24 a 48 horas."
       }
     ],
-    image: "/images/diseases/quistes-mediastinales.webp",
+    image: "/enfermedades/quistes-mediastinales.jpg",
     seo: {
       title: "Cirugía de Quistes Mediastinales por VATS | Dr. Raúl Vega",
       description: "Resección de quistes broncogénicos y pericárdicos del mediastino por VATS en CDMX. Consulta con cirujano torácico en Interlomas.",
@@ -451,53 +450,53 @@ export const diseases: MedicalCondition[] = [
     }
   },
   {
-    id: "absceso-pulmonar-bronquiectasias",
-    slug: "absceso-pulmonar-bronquiectasias",
-    name: "Absceso Pulmonar y Bronquiectasias Localizadas",
-    technicalName: "Absceso Necrotizante Pulmonar / Bronquiectasias Saculares",
-    description: "Infecciones supurativas crónicas que destruyen el parénquima pulmonar formando cavidades de pus (abscesos) o dilataciones irreversibles de los bronquios (bronquiectasias) con secreción purulenta constante.",
+    id: "tumores-neoplasias-pared-toracica",
+    slug: "tumores-neoplasias-pared-toracica",
+    name: "Tumores y Neoplasias de la Pared Torácica",
+    technicalName: "Neoplasia Benigna / Maligna de Costillas y Pared Torácica",
+    description: "Tumores primarios o metastásicos que se originan en los arcos costales, esternón o musculatura de la caja torácica, requiriendo resección oncológica y reconstrucción estructural de la pared.",
     symptoms: [
-      "Tos crónica con expectoración purulenta fétida abundante (vómica)",
-      "Fiebre héctica, pérdida de peso y astenia marcada",
-      "Hemoptisis recurrente (sangrado de origen bronquial)",
-      "Infecciones pulmonares repetitivas en el mismo lóbulo"
+      "Masa palpable o abultamiento visible en la caja torácica o esternón",
+      "Dolor torácico localizado continuo o progresivo",
+      "Sensación de firmeza o molestia en la pared costal afectada",
+      "Deformidad ósea visible a la inspección"
     ],
     causes: [
-      "Aspiración de contenido orofaríngeo o gástrico",
-      "Neumonías necrotizantes secundarias a bacterias anaerobias o estafilococo",
-      "Secuelas de tuberculosis pulmonar previa o cuerpo extraño"
+      "Tumores óseos o cartilaginosos primarios (condrosarcoma, osteosarcoma, displasia fibrosa)",
+      "Metástasis a arcos costales o esternón de carcinomas primarios",
+      "Lesiones benignas de partes blandas (lipomas, fibromas intercostales)"
     ],
     riskFactors: [
-      "Trastornos de la deglución, alcoholismo o alteraciones del estado de alerta",
-      "Antecedentes de infecciones respiratorias severas en la infancia"
+      "Antecedentes de neoplasias en otros órganos",
+      "Exposición previa a radioterapia torácica"
     ],
-    mexicoStats: "Las bronquiectasias localizadas resistentes al tratamiento médico se benefician notablemente de la lobectomía quirúrgica selectiva.",
+    mexicoStats: "La resección en bloque con reconstrucción de pared mediante mallas sintéticas y barras de titanio preserva la función respiratoria sin secuelas.",
     complications: [
-      "Hemoptisis masiva exanguinante (emergencia quirúrgica)",
-      "Fístula broncopleural con empiema secundario",
-      "Amiloidosis secundaria e insuficiencia pulmonar"
+      "Invasión a pleura, pulmón o pericardio adyacente",
+      "Inestabilidad o tórax paradójico por defectos óseos extensos no reconstruidos",
+      "Compresión de estructuras neurovasculares intercostales"
     ],
     treatments: [
-      "Lobectomía o segmentectomía pulmonar resolutiva por VATS o toracotomía",
-      "Drenaje percutáneo o quirúrgico de cavidades de absceso refractarias",
-      "Limpieza y decorticación pleural asociada",
-      "Tratamiento antibiótico de soporte guiado por cultivo e higienización bronquial"
+      "Resección tumoral en bloque con márgenes oncológicos de seguridad",
+      "Reconstrucción de la pared torácica con malla de prolene/metilmetacrilato o placas de titanio",
+      "Evaluación y estadificación tomográfica de alta precisión",
+      "Manejo conjunto con oncología quirúrgica y médica"
     ],
     faqs: [
       {
-        question: "¿Cuándo se deben operar las bronquiectasias?",
-        answer: "Cuando están localizadas en un solo lóbulo y provocan tos con pus o sangrado (hemoptisis) frecuente a pesar de haber recibido tratamiento médico farmacológico adecuado."
+        question: "¿Si me quitan una o dos costillas por un tumor, cómo queda la respiración?",
+        answer: "Durante la misma cirugía se realiza la reconstrucción rígida de la pared torácica con mallas o prótesis sintéticas de titanio, lo que mantiene la estabilidad de la caja torácica y permite una respiración normal."
       },
       {
-        question: "¿Se puede vivir normalmente sin un lóbulo pulmonar?",
-        answer: "Sí. El tejido pulmonar restante se expande y suple la función respiratoria, permitiendo una vida activa y sin la infección crónica previa."
+        question: "¿Todos los bultos en las costillas son malignos?",
+        answer: "No. Existen lesiones benignas como osteocondromas, displasias fibrosas o granulomas. Es fundamental realizar una tomografía de tórax y valoración por el cirujano torácico para determinar la conducta."
       }
     ],
-    image: "/images/diseases/absceso-pulmonar.webp",
+    image: "/enfermedades/tumores-neoplacias.jpg",
     seo: {
-      title: "Tratamiento de Absceso Pulmonar y Bronquiectasias | Dr. Raúl Vega",
-      description: "Cirugía resolutiva para absceso pulmonar y bronquiectasias localizadas en CDMX. Lobectomía por VATS con cirujano torácico especialista.",
-      keywords: ["absceso pulmonar cirugia cdmx", "bronquiectasias lobectomia", "hemoptisis tratamiento quirúrgico", "cirujano de torax cdmx"]
+      title: "Tumores y Neoplasias de la Pared Torácica | Dr. Raúl Vega",
+      description: "Cirugía oncológica y reconstrucción de la pared torácica y costillas en CDMX. Resección tumoral y placas de titanio con cirujano torácico.",
+      keywords: ["tumores pared toracica cdmx", "condrosarcoma costal cirugia", "reconstruccion pared toracica", "cirujano toracico interlomas"]
     }
   },
   {
@@ -542,7 +541,7 @@ export const diseases: MedicalCondition[] = [
         answer: "Sí. Un pequeño desgarro no diagnosticado tras un accidente puede agrandarse con los años debido a la diferencia de presiones entre abdomen y tórax."
       }
     ],
-    image: "/images/diseases/hernia-diafragmatica.webp",
+    image: "/enfermedades/hernia-diafragmatica.jpg",
     seo: {
       title: "Cirugía de Hernia Diafragmática y Plicatura por VATS | Dr. Raúl Vega",
       description: "Reparación quirúrgica de hernia diafragmática y plicatura por eventración o parálisis diafragmática por VATS en CDMX e Interlomas.",
@@ -550,52 +549,52 @@ export const diseases: MedicalCondition[] = [
     }
   },
   {
-    id: "infecciones-pulmonares-tuberculosis",
-    slug: "infecciones-pulmonares-tuberculosis",
-    name: "Infecciones Pulmonares Complejas (Tuberculosis, Micetoma, Mucormicosis)",
-    technicalName: "Infección Granulomatosa Cavitada / Aspergiloma / Micetoma Pulmonar",
-    description: "Complicaciones quirúrgicas derivadas de infecciones micóticas o bacterianas crónicas que forman masa de hongos (micetoma), cavidades sangrantes o destrucción parenquimatosa.",
+    id: "mesotelioma-pleural",
+    slug: "mesotelioma-pleural",
+    name: "Mesotelioma Pleural y Neoplasias Pleurales",
+    technicalName: "Mesotelioma Maligno Pleural / Neoplasia Pleural Primaria",
+    description: "Tumor primario agresivo originado en las células mesoteliales de la pleura, estrechamente asociado a la exposición al asbesto. Requiere diagnóstico por VATS, estadificación y abordaje citorreductor.",
     symptoms: [
-      "Hemoptisis recurrente o sangrado bronquial masivo",
-      "Tos crónica con esputo numular o fétido",
-      "Pérdida de peso progresiva, sudoración nocturna y febrícula",
-      "Falta de aire y dolor en la pared del tórax"
+      "Dolor torácico sordo y persistente en el hemotórax afectado",
+      "Disnea progresiva por derrame pleural recurrente masivo",
+      "Pérdida de peso involuntaria, astenia y febrícula nocturna",
+      "Asimetría o restricción de la expansión torácica"
     ],
     causes: [
-      "Infección por Mycobacterium tuberculosis con cavernas residuales",
-      "Colonización por Aspergillus en cavidades pulmonares preexistentes (Aspergiloma)",
-      "Infecciones fúngicas invasivas en pacientes con antecedente de inmunosupresión o diabetes"
+      "Exposición ocupacional o ambiental prolongada a fibras de asbesto / amianto",
+      "Infección por virus simio SV40 o predisposición genética epigenética"
     ],
     riskFactors: [
-      "Antecedente de haber padecido tuberculosis pulmonar",
-      "Diabetes mellitus descompensada o uso crónico de esteroides"
+      "Trabajo previo en construcción, astilleros, frenos automotrices o aislamientos",
+      "Convivencia con trabajadores expuestos al asbesto"
     ],
-    mexicoStats: "La resección quirúrgica selectiva es vital en pacientes con hemoptisis amenazante secundaria a micetomas pulmonares.",
+    mexicoStats: "El diagnóstico oportuno por videotoracoscopia (VATS) con biopsia amplia permite la pleurodesis precoz y el inicio de terapia multimodal.",
     complications: [
-      "Hemorragia pulmonar masiva catastrófica por erosión de arterias bronquiales",
-      "Diseminación infecciosa pleuro-pulmonar y fístula broncopleural",
-      "Destrucción completa de un lóbulo o pulmón entero"
+      "Invasión a pared torácica, pericardio y diafragma",
+      "Derrame pleural maligno masivo incoercible",
+      "Insuficiencia respiratoria restrictiva severa"
     ],
     treatments: [
-      "Resección pulmonar quirúrgica de la caverna o micetoma (Lobectomía / Segmentectomía)",
-      "Caviterostomía o mioplastia en pacientes con alta restricción funcional",
-      "Manejo interdisciplinario con infectología médica torácica"
+      "Biopsia pleural dirigida por VATS mínimamente invasiva",
+      "Pleurodesis química para control de derrame pleural maligno recidivante",
+      "Pleurectomía / Decorticación citorreductora (P/D) en casos seleccionados",
+      "Manejo oncológico multidisciplinario (quimioterapia e inmunoterapia pre/postoperatoria)"
     ],
     faqs: [
       {
-        question: "¿Por qué se requiere operar un micetoma (bola de hongo en pulmón)?",
-        answer: "Porque los medicamentos antifúngicos no penetran bien dentro de la bola de hongo dentro de la cavidad seca, y el hongo suele erosionar arterias provocando sangrados pulmonares potencialmente fatales."
+        question: "¿Cómo se diagnostica de certeza el mesotelioma pleural?",
+        answer: "La biopsia tomográfica suele ser insuficiente. La videotoracoscopia (VATS) es el método de elección ('Gold Standard'), ya que permite visualizar directamente la pleura y tomar muestras de grosor completo para inmunohistoquímica."
       },
       {
-        question: "¿Se cura la infección con la cirugía?",
-        answer: "Al extirpar la cavidad infecciosa y combinarlo con el esquema médico adecuado, la tasa de curación y control de sangrado es sumamente elevada."
+        question: "¿Qué se puede hacer si el líquido pleural vuelve a acumularse rápidamente?",
+        answer: "Se realiza una pleurodesis por VATS, aplicando un agente esclerosante que sella el espacio pleural e impide que el líquido se vuelva a formar, aliviando la falta de aire."
       }
     ],
-    image: "/images/diseases/micetoma-tuberculosis.webp",
+    image: "/enfermedades/mesotelioma-pleural.jpg",
     seo: {
-      title: "Cirugía de Tuberculosis y Micetoma Pulmonar | Dr. Raúl Vega",
-      description: "Tratamiento quirúrgico para micetoma pulmonar, aspergiloma y secuelas cavitadas de tuberculosis en CDMX. Cirujano torácico especialista.",
-      keywords: ["micetoma pulmonar cirugia", "aspergiloma tratamiento cdmx", "tuberculosis secuelas cirugia", "cirujano toracico polanco"]
+      title: "Mesotelioma Pleural y Cirugía Pleural en CDMX | Dr. Raúl Vega",
+      description: "Diagnóstico por VATS, biopsia y pleurodesis para mesotelioma y tumores pleurales en CDMX e Interlomas. Cirujano torácico especializado.",
+      keywords: ["mesotelioma pleural cdmx", "biopsia pleural por vats", "pleurodesis derrame maligno", "cirujano de torax interlomas"]
     }
   }
 ];

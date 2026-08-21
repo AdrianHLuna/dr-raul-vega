@@ -352,13 +352,28 @@ export default function Home() {
               className="bg-white rounded-[2rem] p-6 border border-slate-200/80 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col justify-between group relative overflow-hidden text-center"
             >
               <div className="relative z-10 flex flex-col items-center">
-                <div className="flex items-center justify-center gap-2 mb-3">
-                  <span className="px-3 py-1 rounded-full bg-slate-100 text-slate-700 font-extrabold text-[10px] uppercase">
-                    Especialidad Torácica
+                {/* Disease Image Thumbnail */}
+                <div className="relative aspect-[16/9] w-full rounded-2xl overflow-hidden mb-4 border border-slate-200/60 shadow-sm bg-[#0A192F] group-hover:shadow-md transition-shadow">
+                  <Image
+                    src={d.image}
+                    alt={d.name}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0A192F]/60 via-transparent to-transparent" />
+                  <span className="absolute bottom-2.5 left-3 px-3 py-1 rounded-full bg-[#00A896] text-[#0A192F] font-black text-[10px] uppercase tracking-widest shadow-md">
+                    Cirugía Torácica
                   </span>
-                  <FaLungs className="text-[#00A896] text-base" />
                 </div>
-                <h3 className="text-xl font-black text-slate-900 mb-2 group-hover:text-[#0A192F] transition-colors text-center">
+
+                <div className="flex items-center justify-center gap-2 mb-2">
+                  <span className="px-3 py-0.5 rounded-full bg-slate-100 text-slate-700 font-extrabold text-[10px] uppercase">
+                    {d.technicalName ? d.technicalName.substring(0, 28) + "..." : "Especialidad Torácica"}
+                  </span>
+                  <FaLungs className="text-[#00A896] text-sm" />
+                </div>
+                <h3 className="text-xl font-black text-slate-900 mb-2 group-hover:text-[#0A192F] transition-colors text-center leading-snug">
                   {d.name}
                 </h3>
                 <p className="text-slate-600 text-xs leading-relaxed mb-4 font-medium line-clamp-3 text-center">

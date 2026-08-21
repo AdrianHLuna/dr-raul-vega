@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { diseases } from "@/data/diseases";
 import { doctor } from "@/data/doctor";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -63,6 +64,21 @@ export default function DiseasesListPage() {
               className="bg-white rounded-[2.5rem] p-6 border border-slate-200/80 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col justify-between group relative overflow-hidden"
             >
               <div className="relative z-10">
+                {/* Disease Image Card Banner */}
+                <div className="relative aspect-[16/9] w-full rounded-2xl overflow-hidden mb-4 border border-slate-200/60 shadow-sm bg-[#0A192F]">
+                  <Image
+                    src={disease.image}
+                    alt={disease.name}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0A192F]/70 via-transparent to-transparent" />
+                  <span className="absolute bottom-2.5 left-3 px-3 py-1 rounded-full bg-[#00A896] text-[#0A192F] font-black text-[10px] uppercase tracking-widest shadow-md">
+                    Ilustración Médica
+                  </span>
+                </div>
+
                 <div className="flex items-center justify-between mb-3">
                   <span className="px-3 py-1 rounded-full bg-slate-100 text-slate-700 font-extrabold text-[10px] uppercase">
                     {disease.technicalName ? disease.technicalName.substring(0, 30) + "..." : "Especialidad Torácica"}
