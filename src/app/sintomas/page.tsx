@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { symptoms } from "@/data/symptoms";
 import { doctor } from "@/data/doctor";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -62,9 +63,22 @@ export default function SymptomsListPage() {
               key={symptom.id}
               className="bg-white rounded-[2.5rem] p-8 border border-slate-200/80 shadow-xl flex flex-col justify-between group hover:border-[#0A192F] transition-all relative overflow-hidden"
             >
-              <FaHeartbeat className="absolute bottom-[-10px] right-[-10px] text-slate-100 text-[140px] pointer-events-none" />
-
               <div className="relative z-10">
+                {/* Symptom Image Banner */}
+                <div className="relative aspect-[16/9] w-full rounded-2xl overflow-hidden mb-5 border border-slate-200/60 shadow-sm bg-[#0A192F]">
+                  <Image
+                    src={symptom.image}
+                    alt={symptom.name}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0A192F]/70 via-transparent to-transparent" />
+                  <span className="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-rose-600 text-white font-black text-[10px] uppercase tracking-widest shadow-md">
+                    Fotografía Clínica
+                  </span>
+                </div>
+
                 <div className="flex items-center justify-between mb-4">
                   <span className="px-3 py-1 rounded-full bg-rose-50 text-rose-800 font-extrabold text-xs border border-rose-100 flex items-center gap-1.5">
                     <FaExclamationTriangle /> Señal de Atención

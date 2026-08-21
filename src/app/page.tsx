@@ -419,12 +419,22 @@ export default function Home() {
                 whileHover={{ y: -6 }}
                 className="bg-[#172A45] rounded-[2rem] p-8 border border-[#00A896]/30 flex flex-col justify-between group hover:border-[#00A896] transition-all text-center"
               >
-                <div className="flex flex-col items-center">
-                  <div className="flex items-center justify-center mb-4">
-                    <span className="px-3.5 py-1 rounded-full bg-[#00A896]/20 text-[#00A896] font-black text-xs uppercase tracking-wider">
+                <div className="flex flex-col items-center w-full">
+                  {/* Service Image Banner */}
+                  <div className="relative aspect-[16/9] w-full rounded-2xl overflow-hidden mb-5 border border-[#00A896]/30 shadow-md bg-[#0A192F]">
+                    <Image
+                      src={s.image}
+                      alt={s.name}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#0A192F]/80 via-transparent to-transparent" />
+                    <span className="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-[#00A896] text-[#0A192F] font-black text-[10px] uppercase tracking-widest shadow-md">
                       {s.type}
                     </span>
                   </div>
+
                   <h3 className="text-2xl font-black text-white mb-3 text-center">
                     {s.name}
                   </h3>
@@ -473,10 +483,23 @@ export default function Home() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {symptoms.slice(0, 4).map((sym) => (
-            <div key={sym.id} className="bg-white p-8 rounded-[2rem] border border-slate-200/80 shadow-lg relative overflow-hidden text-center flex flex-col justify-between">
-              <FaHeartbeat className="absolute bottom-[-10px] right-[-10px] text-slate-100 text-[120px] pointer-events-none" />
+            <div key={sym.id} className="bg-white p-8 rounded-[2rem] border border-slate-200/80 shadow-lg relative overflow-hidden text-center flex flex-col justify-between group">
+              <div className="relative z-10 flex flex-col items-center w-full">
+                {/* Symptom Image Banner */}
+                <div className="relative aspect-[16/9] w-full rounded-2xl overflow-hidden mb-5 border border-slate-200/60 shadow-sm bg-[#0A192F]">
+                  <Image
+                    src={sym.image}
+                    alt={sym.name}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0A192F]/70 via-transparent to-transparent" />
+                  <span className="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-rose-600 text-white font-black text-[10px] uppercase tracking-widest shadow-md">
+                    Fotografía Clínica
+                  </span>
+                </div>
 
-              <div className="relative z-10 flex flex-col items-center">
                 <h3 className="text-xl font-black text-slate-900 mb-3 text-center">{sym.name}</h3>
                 <p className="text-slate-600 text-sm leading-relaxed mb-6 font-medium text-center">{sym.description}</p>
                 <div className="bg-slate-50 p-4 rounded-xl border border-slate-100 mb-6 text-xs text-slate-700 text-center w-full">

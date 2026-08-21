@@ -31,7 +31,7 @@ export const services: MedicalService[] = [
       "Tipo de Abordaje": "Uniportal (1 puerto) o Multiportal (2-3 incisiones milimétricas)",
       "Anestesia": "Anestesia general con tubo de doble luz para colapso pulmonar selectivo"
     },
-    image: "/images/services/vats-cirugia.webp",
+    image: "/procedimientos/cirugia-torax.jpg",
     seo: {
       title: "Cirugía de Tórax Mínimamente Invasiva (VATS) en CDMX | Dr. Raúl Vega",
       description: "Cirugía de tórax mínimamente invasiva (VATS) en CDMX e Interlomas. Menos dolor y rápida recuperación con cirujano torácico especialista.",
@@ -65,7 +65,7 @@ export const services: MedicalService[] = [
       "Técnica": "Discepción vascular hiliar (Arteria, Veena y Bronquio lobar independiente)",
       "Linfadenectomía": "Muestreo/Vaciamiento ganglionar de estaciones 2R, 4R, 7, 8, 9, 10, 11 (según lado)"
     },
-    image: "/images/services/lobectomia.webp",
+    image: "/procedimientos/lobectomia-pulmonar.jpg",
     seo: {
       title: "Lobectomía Pulmonar y Cirugía Oncológica | Dr. Raúl Vega",
       description: "Resección pulmonar y lobectomía por VATS en CDMX para cáncer de pulmón y tumores. Cirujano torácico certificado.",
@@ -99,7 +99,7 @@ export const services: MedicalService[] = [
       "Incisión": "2 incisiones de 5 mm por lado bajo la axila",
       "Instrumental": "Óptica de 5 mm y gancho de electrocauterio o clips de titanio"
     },
-    image: "/images/services/simpatectomia-vats.webp",
+    image: "/procedimientos/simpatectomia-toracica.jpg",
     seo: {
       title: "Simpatectomía Torácica VATS para Hiperhidrosis | Dr. Raúl Vega",
       description: "Cirugía de sudoración excesiva en manos y axilas por VATS ambulatorio en CDMX. Resultados inmediatos con cirujano especialista.",
@@ -132,7 +132,7 @@ export const services: MedicalService[] = [
       "Técnica": "Pleurectomía visceral y parietal minuciosa con preservación de parénquima pulmonar",
       "Abordaje": "VATS para estadios II/III tempranos o toracotomía ahorradora de músculo para estadios III tardíos"
     },
-    image: "/images/services/decorticacion-pleural.webp",
+    image: "/procedimientos/decorticacion-pleural.jpg",
     seo: {
       title: "Decorticación Pleural por VATS | Dr. Raúl Vega",
       description: "Cirugía de liberación pulmonar en CDMX. Decorticación por VATS con cirujano torácico especialista en Interlomas.",
@@ -166,7 +166,7 @@ export const services: MedicalService[] = [
       "Muestra": "Biopsia en cuña con engrapadora endoscópica mecánica (Endo-GIA)",
       "Pruebas asociadas": "Histopatología estándar, inmunohistoquímica y secuenciación genética de tumores"
     },
-    image: "/images/services/biopsia-vats.webp",
+    image: "/procedimientos/biopsia-pulmonar.jpg",
     seo: {
       title: "Biopsia Pulmonar y Pleural por VATS en CDMX | Dr. Raúl Vega",
       description: "Toma de biopsia de pulmón, pleura y mediastino por VATS en CDMX. Diagnóstico certero con cirujano torácico especialista.",
@@ -200,7 +200,7 @@ export const services: MedicalService[] = [
       "Abordaje": "VATS Subxifoideo o Toracoscópico Izquierdo/Derecho",
       "Límites de resección": "Desde los cuernos tímicos cervicales hasta los ángulos cardiofrénicos bilaterales"
     },
-    image: "/images/services/timectomia-vats.webp",
+    image: "/procedimientos/timectomia-quirurjica.jpg",
     seo: {
       title: "Timectomía Quirúrgica por VATS en CDMX | Dr. Raúl Vega",
       description: "Extirpación de timo por VATS sin esternotomía para timoma y miastenia gravis en CDMX e Interlomas. Cirujano torácico experto.",
@@ -233,7 +233,7 @@ export const services: MedicalService[] = [
       "Anastomosis": "Sutura continua o puntos separados con material monofilamento reabsorbible de lenta degradación",
       "Maniobras de liberación": "Liberación hioidea o laríngea según la longitud de la resección"
     },
-    image: "/images/services/traqueoplastia.webp",
+    image: "/procedimientos/reconstruccion-traqueal.jpg",
     seo: {
       title: "Resección Traqueal y Traqueoplastia en CDMX | Dr. Raúl Vega",
       description: "Cirugía de reconstrucción traqueal para estenosis post-intubación y tumores de vía aérea en CDMX. Cirujano torácico especialista.",
@@ -266,7 +266,7 @@ export const services: MedicalService[] = [
       "Plicatura": "Suturas invaginantes interrumpidas con parches de teflón/fieltros de refuerzo",
       "Hernias": "Reducción y cierre de defecto con o sin malla según tamaño del anillo"
     },
-    image: "/images/services/plicatura-diafragma.webp",
+    image: "/procedimientos/plicatura-diafragmatica.jpg",
     seo: {
       title: "Plicatura Diafragmática por VATS en CDMX | Dr. Raúl Vega",
       description: "Cirugía de parálisis y eventración diafragmática por VATS en CDMX e Interlomas. Cirujano torácico especialista.",
@@ -300,7 +300,7 @@ export const services: MedicalService[] = [
       "Material": "Placas y grapas anatómicas de titanio puro biocompatible (Sistema MatrixRIB)",
       "Abordaje": "Incisiones mínimas dirigidas por ecografía/TAC preoperatorio"
     },
-    image: "/images/services/osteosintesis-costal.webp",
+    image: "/procedimientos/fijacion-trauma-toracico.jpg",
     seo: {
       title: "Fijación de Fracturas Costales con Titanio | Dr. Raúl Vega",
       description: "Osteosíntesis y fijación de costillas rotas con placas de titanio en CDMX. Cirujano especializado en trauma torácico e Interlomas.",
@@ -308,35 +308,37 @@ export const services: MedicalService[] = [
     }
   },
   {
-    id: "pleurodesis-quimica-quirurgica",
-    slug: "pleurodesis-quimica-quirurgica",
-    name: "Pleurodesis Química y Quirúrgica (Control de Derrame/Neumotórax)",
-    description: "Procedimiento para sellar el espacio pleural adhiriendo la pleura visceral a la parietal, impidiendo la reacumulación de líquido o aire.",
-    longDescription: "Indicada en pacientes con derrames pleurales malignos recurrentes por cáncer o en neumotórax espontáneo de repetición. Consiste en la instilación de agentes esclerosantes o la abrasión pleural mecánica por VATS para provocar una adehrencia inflamatoria controlada que elimina el espacio pleural.",
+    id: "reseccion-reconstruccion-pared-toracica",
+    slug: "reseccion-reconstruccion-pared-toracica",
+    name: "Resección y Reconstrucción de Pared Torácica",
+    description: "Reconstrucción esquelética y de partes blandas de la caja torácica tras resecciones amplio por tumores óseos, de esternón o cartílagos costales.",
+    longDescription: "Cuando una lesión tumoral afecta la estructura rígida de las costillas o el esternón, se realiza la exéresis en bloque del tejido afectado y la inmediata reconstrucción rígida mediante mallas sintéticas y barras de titanio, preservando la dinámica respiratoria.",
     type: "hospitalario",
-    anesthesiaType: "Anestesia Local con Sedación o Anestesia General",
-    duration: "30 a 60 minutos",
-    recoveryTime: "24 a 48 horas con sonda endopleural",
+    anesthesiaType: "Anestesia General",
+    duration: "2.5 a 4 horas",
+    recoveryTime: "3 a 5 días de hospitalización",
     isPainful: false,
     benefits: [
-      "Previene la reacumulación recurrente de líquido o aire al 95%",
-      "Evita punción pleural o toracocentesis repetidas",
-      "Mejora sostenida de la calidad de vida y falta de aire en pacientes oncológicos"
+      "Resección tumoral amplia con márgenes de seguridad oncológicos",
+      "Estabilidad estructural inmediata de la pared del tórax",
+      "Preservación de la mecánica respiratoria sin restricción ventilatoria",
+      "Excelente resultado cosmético y funcional"
     ],
     postOpRecommendations: [
-      "Pinzamiento y retiro de sonda endopleural tras cese de drenaje",
-      "Analgesia agendada post-instilación",
-      "Seguimiento radiográfico"
+      "Fisioterapia respiratoria asistida y espirometría",
+      "Seguimiento con oncología quirúrgica y médica",
+      "Cuidados de la herida quirúrgica y drenajes"
     ],
-    priceRange: "Acepta Seguros Médicos por Reembolso",
+    priceRange: "Cubierto por Seguros de Gastos Médicos Mayores",
     technicalSpecs: {
-      "Agentes": "Talco estéril grado médico (Talc poudrage por VATS o Slurry por sonda), Abrasión mecánica o Pleurectomía"
+      "Reconstrucción": "Malla de polipropileno/metilmetacrilato y barras de titanio parietal",
+      "Abordaje": "Incisión conservadora musculocutánea"
     },
-    image: "/images/services/pleurodesis.webp",
+    image: "/procedimientos/reconstruccion-pared-toracica.jpg",
     seo: {
-      title: "Pleurodesis Pleural para Derrame y Neumotórax | Dr. Raúl Vega",
-      description: "Procedimiento de sellado pleural (pleurodesis por talco o VATS) para evitar reacumulación de líquido o neumotórax en CDMX.",
-      keywords: ["pleurodesis con talco cdmx", "sellado pleural derrame maligno", "pleurodesis vats neumotorax", "cirujano toracico polanco"]
+      title: "Resección y Reconstrucción de Pared Torácica | Dr. Raúl Vega",
+      description: "Cirugía oncológica y reconstrucción de la pared torácica y costillas en CDMX. Resección tumoral y titanio con cirujano torácico.",
+      keywords: ["reconstruccion pared toracica cdmx", "tumores de costillas cirugia", "reserccion esquelética torax", "cirujano toracico interlomas"]
     }
   }
 ];

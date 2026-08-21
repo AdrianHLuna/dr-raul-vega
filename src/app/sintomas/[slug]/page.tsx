@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { symptoms } from "@/data/symptoms";
 import { doctor } from "@/data/doctor";
 import { notFound } from "next/navigation";
@@ -58,29 +59,52 @@ export default async function SymptomDetailPage({ params }: { params: Promise<{ 
           <div className="bg-[#0A192F] text-white rounded-[2.5rem] p-8 lg:p-12 shadow-2xl relative overflow-hidden border border-[#172A45]">
             <FaNotesMedical className="absolute bottom-[-30px] right-[-30px] text-white/5 text-[240px] pointer-events-none" />
 
-            <div className="max-w-4xl relative z-10 space-y-4">
-              <span className="px-3.5 py-1 rounded-full bg-rose-500/20 text-rose-300 font-black text-xs uppercase tracking-widest inline-block border border-rose-500/40">
-                Orientación para el Paciente
-              </span>
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
+              
+              <div className="lg:col-span-7 space-y-4">
+                <span className="px-3.5 py-1 rounded-full bg-rose-500/20 text-rose-300 font-black text-xs uppercase tracking-widest inline-block border border-rose-500/40">
+                  Orientación para el Paciente
+                </span>
 
-              <h1 className="text-3xl lg:text-5xl font-black text-white leading-tight">
-                {symptom.name}
-              </h1>
+                <h1 className="text-3xl lg:text-5xl font-black text-white leading-tight">
+                  {symptom.name}
+                </h1>
 
-              <p className="text-slate-300 text-base lg:text-lg leading-relaxed font-medium">
-                {symptom.description}
-              </p>
+                <p className="text-slate-300 text-base lg:text-lg leading-relaxed font-medium">
+                  {symptom.description}
+                </p>
 
-              <div className="pt-2">
-                <a
-                  href={whatsappUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="px-6 py-3.5 rounded-2xl bg-[#00A896] text-[#0A192F] font-black text-xs uppercase tracking-wider hover:bg-[#02C39A] transition-all shadow-xl inline-flex items-center gap-2"
-                >
-                  <FaCalendarCheck size={16} /> Agendar Cita
-                </a>
+                <div className="pt-2">
+                  <a
+                    href={whatsappUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="px-6 py-3.5 rounded-2xl bg-[#00A896] text-[#0A192F] font-black text-xs uppercase tracking-wider hover:bg-[#02C39A] transition-all shadow-xl inline-flex items-center gap-2"
+                  >
+                    <FaCalendarCheck size={16} /> Agendar Cita
+                  </a>
+                </div>
               </div>
+
+              {/* Symptom Image Spotlight (5 cols) */}
+              <div className="lg:col-span-5">
+                <div className="relative aspect-[16/10] sm:aspect-[4/3] rounded-3xl overflow-hidden border-2 border-rose-500/40 shadow-2xl bg-[#071324] group">
+                  <Image
+                    src={symptom.image}
+                    alt={`Fotografía Clínica - ${symptom.name}`}
+                    fill
+                    priority
+                    sizes="(max-width: 1024px) 100vw, 40vw"
+                    className="object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0A192F] via-[#0A192F]/20 to-transparent flex flex-col justify-end p-4 text-white">
+                    <span className="px-3 py-1 rounded-full bg-rose-600 text-white font-black text-[10px] uppercase tracking-widest self-start shadow-md">
+                      Fotografía Clínica Oficial
+                    </span>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </section>
