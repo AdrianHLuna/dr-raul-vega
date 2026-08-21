@@ -554,34 +554,136 @@ export default function Home() {
         </section>
       )}
 
-      {/* ─── 7. LOCATION & CONTACT ───────────────────────────────────────────── */}
+      {/* ─── 7. FEES, PAYMENT METHODS & INSURANCE ────────────────────────────── */}
       <section className="py-16 px-6 max-w-7xl mx-auto relative z-10">
         <div className="bg-[#0A192F] text-white rounded-[2.5rem] p-8 lg:p-12 border border-[#172A45] shadow-2xl flex flex-col items-center text-center relative overflow-hidden">
-          <FaMapMarkerAlt className="absolute top-[-30px] right-[-30px] text-white/5 text-[240px] pointer-events-none" />
+          <FaShieldAlt className="absolute top-[-30px] right-[-30px] text-white/5 text-[260px] pointer-events-none" />
 
-          <div className="max-w-3xl mx-auto space-y-6 relative z-10 mb-8 flex flex-col items-center">
+          {/* Section Header */}
+          <div className="max-w-3xl mx-auto space-y-4 relative z-10 mb-10 flex flex-col items-center">
             <span className="px-4 py-1.5 rounded-full bg-[#00A896]/20 text-[#00A896] font-black text-xs uppercase tracking-widest inline-block border border-[#00A896]/40">
-              Ubicación del Consultorio & Citas
+              Costo de Consulta, Seguros & Métodos de Pago
             </span>
             <h2 className="text-3xl lg:text-4xl font-black text-white">
-              Consultorio Presencial — {doctor.title} {doctor.name}
+              Valoración Médica, Formas de Pago y Aseguradoras
             </h2>
-            <div className="space-y-3 text-sm text-slate-200 flex flex-col items-center max-w-xl mx-auto">
-              <p className="flex items-center justify-center gap-3">
-                <FaMapMarkerAlt className="text-[#00A896] text-lg flex-shrink-0" />
-                <span>{doctor.address}</span>
-              </p>
-              <p className="flex items-center justify-center gap-3">
-                <FaMoneyBillWave className="text-[#00A896] text-lg flex-shrink-0" />
-                <span>Precio Consulta Presencial: <strong>${doctor.consultationPrice} MXN</strong> (Meses Sin Intereses)</span>
-              </p>
-              <p className="flex items-center justify-center gap-3">
-                <FaCreditCard className="text-[#00A896] text-lg flex-shrink-0" />
-                <span>Métodos de Pago: {doctor.paymentMethods.join(", ")}</span>
-              </p>
+            <p className="text-slate-300 text-sm max-w-2xl mx-auto leading-relaxed">
+              Brindamos esquemas de pago flexibles, meses sin intereses y respaldo documental completo para el trámite de reembolso con aseguradoras de gastos médicos mayores.
+            </p>
+          </div>
+
+          {/* 3 Bento Cards: Costo, Métodos de Pago, Seguros */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-6xl relative z-10 mb-10 text-left">
+            
+            {/* Card 1: Costo de Consulta */}
+            <div className="bg-[#172A45] p-6 lg:p-8 rounded-3xl border border-[#00A896]/30 flex flex-col justify-between space-y-4 hover:border-[#00A896] transition-all">
+              <div>
+                <div className="w-12 h-12 rounded-2xl bg-[#00A896]/20 text-[#00A896] flex items-center justify-center mb-4">
+                  <FaMoneyBillWave size={22} />
+                </div>
+                <span className="text-[10px] font-black uppercase tracking-widest text-[#00A896] block mb-1">
+                  Inversión en Salud
+                </span>
+                <h3 className="text-xl font-black text-white mb-2">Consulta Presencial</h3>
+                <div className="flex items-baseline gap-2 mb-3">
+                  <span className="text-3xl font-black text-white">${doctor.consultationPrice}</span>
+                  <span className="text-xs text-slate-400 font-bold">MXN</span>
+                </div>
+                <p className="text-xs text-slate-300 leading-relaxed">
+                  Evaluación clínica completa por el especialista, revisión de tomografías o radiografía y propuesta quirúrgica.
+                </p>
+              </div>
+              <div className="pt-3 border-t border-slate-700/60">
+                <span className="inline-flex items-center gap-1.5 text-[11px] text-emerald-400 font-bold">
+                  <FaCheckCircle className="text-[#00A896]" /> Disponible a Meses Sin Intereses
+                </span>
+              </div>
+            </div>
+
+            {/* Card 2: Métodos de Pago */}
+            <div className="bg-[#172A45] p-6 lg:p-8 rounded-3xl border border-[#00A896]/30 flex flex-col justify-between space-y-4 hover:border-[#00A896] transition-all">
+              <div>
+                <div className="w-12 h-12 rounded-2xl bg-[#00A896]/20 text-[#00A896] flex items-center justify-center mb-4">
+                  <FaCreditCard size={22} />
+                </div>
+                <span className="text-[10px] font-black uppercase tracking-widest text-[#00A896] block mb-1">
+                  Facilidades de Pago
+                </span>
+                <h3 className="text-xl font-black text-white mb-3">Métodos de Pago</h3>
+                <div className="flex flex-wrap gap-2 mb-3">
+                  {doctor.paymentMethods.map((pm, idx) => (
+                    <span key={idx} className="px-2.5 py-1 rounded-lg bg-[#0A192F] text-slate-200 text-[11px] font-semibold border border-slate-700">
+                      {pm}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <div className="pt-3 border-t border-slate-700/60">
+                <span className="inline-flex items-center gap-1.5 text-[11px] text-slate-300 font-medium">
+                  <FaCheckCircle className="text-[#00A896]" /> Cobro seguro con terminales y MSI
+                </span>
+              </div>
+            </div>
+
+            {/* Card 3: Seguros Médicos */}
+            <div className="bg-[#172A45] p-6 lg:p-8 rounded-3xl border border-[#00A896]/30 flex flex-col justify-between space-y-4 hover:border-[#00A896] transition-all">
+              <div>
+                <div className="w-12 h-12 rounded-2xl bg-[#00A896]/20 text-[#00A896] flex items-center justify-center mb-4">
+                  <FaShieldAlt size={22} />
+                </div>
+                <span className="text-[10px] font-black uppercase tracking-widest text-[#00A896] block mb-1">
+                  Gastos Médicos Mayores
+                </span>
+                <h3 className="text-xl font-black text-white mb-2">Seguros Médicos</h3>
+                <p className="text-xs text-slate-300 leading-relaxed mb-3">
+                  Emisión de informes médicos, facturas y trámites de reembolso con aseguradoras:
+                </p>
+                <div className="flex flex-wrap gap-1.5 mb-2">
+                  {doctor.insurances?.map((ins, idx) => (
+                    <span key={idx} className="px-2 py-0.5 rounded-md bg-[#00A896]/15 text-[#00A896] text-[10px] font-extrabold border border-[#00A896]/30">
+                      {ins}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <div className="pt-3 border-t border-slate-700/60">
+                <span className="inline-flex items-center gap-1.5 text-[11px] text-emerald-400 font-bold">
+                  <FaCheckCircle className="text-[#00A896]" /> Asesoría en trámites de reembolso
+                </span>
+              </div>
+            </div>
+
+          </div>
+
+          {/* 3 Consultorios Presenciales (Sin mapa) */}
+          <div className="w-full max-w-6xl relative z-10 mb-10 text-left">
+            <div className="text-center mb-6">
+              <span className="text-[10px] font-black uppercase tracking-widest text-[#00A896] bg-[#00A896]/10 px-3 py-1 rounded-full border border-[#00A896]/30 inline-block mb-2">
+                Consultorios Presenciales
+              </span>
+              <h3 className="text-xl lg:text-2xl font-black text-white">
+                Ubicaciones de Atención Médica
+              </h3>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {doctor.locations?.map((loc) => (
+                <div key={loc.id} className="bg-[#172A45] p-6 rounded-3xl border border-[#00A896]/20 hover:border-[#00A896] transition-all flex flex-col justify-between space-y-3">
+                  <div>
+                    <span className="px-2.5 py-0.5 rounded-md bg-[#00A896]/20 text-[#00A896] font-black text-[10px] uppercase tracking-wider inline-block mb-2">
+                      {loc.city}
+                    </span>
+                    <h4 className="font-black text-base text-white mb-2 leading-snug">{loc.name}</h4>
+                    <p className="text-xs text-slate-300 leading-relaxed font-medium">
+                      {loc.address}
+                    </p>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
 
+          {/* Action CTAs */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-4xl relative z-10">
             {/* Box 1: Agendar Cita Regular */}
             <div className="bg-[#172A45] p-8 rounded-3xl border border-[#00A896]/30 text-center space-y-4 flex flex-col justify-between">
@@ -589,7 +691,7 @@ export default function Home() {
                 <span className="px-3 py-1 rounded-full bg-[#00A896]/20 text-[#00A896] font-black text-[10px] uppercase tracking-widest inline-block mb-3">
                   Consulta Presencial
                 </span>
-                <h3 className="font-black text-2xl text-white">¿Deseas una valoración médica?</h3>
+                <h3 className="font-black text-2xl text-white">¿Deseas agendar tu valoración?</h3>
                 <p className="text-xs text-slate-300 leading-relaxed mt-2">
                   Reserva tu cita presencial o solicita orientación médica para cirugía torácica con el {doctor.title} {doctor.name}.
                 </p>
@@ -602,7 +704,7 @@ export default function Home() {
                 rel="noreferrer"
                 className="w-full py-4 rounded-xl bg-[#00A896] text-[#0A192F] font-black text-xs uppercase tracking-wider flex items-center justify-center gap-2 hover:bg-[#02C39A] transition-all shadow-xl"
               >
-                <FaWhatsapp size={18} /> Agendar Cita
+                <FaWhatsapp size={18} /> Agendar Cita por WhatsApp
               </motion.a>
             </div>
 
@@ -612,9 +714,9 @@ export default function Home() {
                 <span className="px-3 py-1 rounded-full bg-rose-500/20 text-rose-300 border border-rose-500/40 font-black text-[10px] uppercase tracking-widest inline-block mb-3 animate-pulse">
                   VALORACIÓN TORÁCICA PRIORITARIA 24/7
                 </span>
-                <h3 className="font-black text-xl text-white">¿Presenta una urgencia torácica?</h3>
+                <h3 className="font-black text-xl text-white">¿Presentas una urgencia torácica?</h3>
                 <p className="text-xs text-slate-200 leading-relaxed mt-2 font-medium">
-                  Atención prioritaria para urgencias y problemas torácicos.
+                  Atención médica prioritaria para urgencias y padecimientos torácicos agudos.
                 </p>
               </div>
               <motion.a
