@@ -8,6 +8,7 @@ import { diseases } from "@/data/diseases";
 import { services } from "@/data/services";
 import { symptoms } from "@/data/symptoms";
 import StructuredData from "@/components/StructuredData";
+import DoctoraliaWidget from "@/components/DoctoraliaWidget";
 import { 
   FaCalendarCheck, 
   FaWhatsapp, 
@@ -130,12 +131,20 @@ export default function Home() {
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.98 }}
+                href="#agenda"
+                className="px-8 py-4 rounded-2xl bg-[#00A896] text-[#0A192F] font-black text-base flex items-center gap-3 hover:bg-[#02C39A] transition-all shadow-xl shadow-[#00A896]/20"
+              >
+                <FaCalendarCheck size={18} /> Agendar Cita en Línea
+              </motion.a>
+              <motion.a
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.98 }}
                 href={whatsappUrl}
                 target="_blank"
                 rel="noreferrer"
                 className="px-8 py-4 rounded-2xl bg-[#00A896] text-[#0A192F] font-black text-base flex items-center gap-3 hover:bg-[#02C39A] transition-all shadow-xl shadow-[#00A896]/20"
               >
-                <FaCalendarCheck size={18} /> Agendar Cita
+                <FaCalendarCheck size={18} /> Agendar Cita WhatsApp
               </motion.a>
               <motion.a
                 whileHover={{ scale: 1.05 }}
@@ -553,6 +562,51 @@ export default function Home() {
           </div>
         </section>
       )}
+
+      {/* ─── 6.5. DOCTORALIA INLINE CALENDAR SECTION ───────────────────────── */}
+      <section className="py-16 px-6 max-w-7xl mx-auto relative z-10" id="agenda">
+        <div className="bg-white rounded-[2.5rem] p-8 lg:p-12 border border-slate-200/80 shadow-2xl relative overflow-hidden">
+          
+          <div className="text-center max-w-3xl mx-auto mb-10 flex flex-col items-center">
+            <span className="text-xs font-black uppercase tracking-widest text-[#00A896] bg-[#0A192F] px-4 py-1.5 rounded-full inline-block mb-3">
+              Agenda tu Cita en Línea
+            </span>
+            <h2 className="text-3xl lg:text-4xl font-black text-[#0A192F] mb-4">
+              Reserva de Consulta Médica & Quirúrgica
+            </h2>
+            <p className="text-slate-600 text-sm lg:text-base leading-relaxed font-medium max-w-2xl">
+              Seleccione la fecha y el horario de su preferencia directamente en la plataforma oficial de Doctoralia. Confirmación inmediata para consulta en la Ciudad de México y área metropolitana.
+            </p>
+          </div>
+
+          {/* Calendar Widget Container */}
+          <div className="w-full flex justify-center items-center min-h-[450px] bg-slate-50 rounded-3xl p-4 lg:p-8 border border-slate-200/80 shadow-inner overflow-x-auto">
+            <DoctoraliaWidget id="zl-url-calendar-section" type="big_with_calendar" />
+          </div>
+
+          {/* Alternative Booking Callout */}
+          <div className="mt-8 pt-6 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center font-bold flex-shrink-0">
+                <FaWhatsapp size={20} />
+              </div>
+              <div>
+                <p className="text-xs font-extrabold text-[#0A192F]">¿Prefieres agendar de forma personalizada?</p>
+                <p className="text-[11px] text-slate-500 font-medium">Contáctanos directamente por WhatsApp para asistencia con horarios o urgencias.</p>
+              </div>
+            </div>
+            <a
+              href={whatsappUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="px-6 py-3 rounded-xl bg-emerald-600 text-white font-extrabold text-xs uppercase tracking-wider hover:bg-emerald-700 transition-colors shadow-md flex items-center gap-2"
+            >
+              <FaWhatsapp size={16} /> WhatsApp Directo
+            </a>
+          </div>
+
+        </div>
+      </section>
 
       {/* ─── 7. FEES, PAYMENT METHODS & INSURANCE ────────────────────────────── */}
       <section className="py-16 px-6 max-w-7xl mx-auto relative z-10">
