@@ -215,7 +215,7 @@ export default function ContactLocationsCenter({ whatsappUrl }: ContactLocations
                 rel="noreferrer"
                 className="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 to-[#00A896] text-[#0A192F] font-black text-xs uppercase tracking-wider flex items-center justify-center gap-2 hover:opacity-90 transition-all shadow-xl"
               >
-                <FaMapMarkerAlt size={16} /> Abrir Ruta a {currentLocation.name} en Maps / Waze
+                <FaMapMarkerAlt size={16} /> Abrir Ficha Oficial de Google Maps / Ruta GPS
               </a>
             </div>
 

@@ -80,7 +80,14 @@ export default function Footer() {
                 <li key={loc.id} className="flex items-start gap-2.5">
                   <FaMapMarkerAlt className="text-[#00A896] mt-0.5 flex-shrink-0" />
                   <div>
-                    <span className="font-bold text-white block">{loc.name}</span>
+                    <a
+                      href={loc.googleMapsUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="font-bold text-white hover:text-[#00A896] transition-colors block"
+                    >
+                      {loc.name}
+                    </a>
                     <span className="text-slate-400 text-[11px] block leading-relaxed">{loc.address}</span>
                   </div>
                 </li>

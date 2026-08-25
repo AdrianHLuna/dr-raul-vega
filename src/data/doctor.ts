@@ -20,30 +20,35 @@ export const doctor: DoctorProfile = {
       name: "Consultorio Hospital Ángeles Lomas",
       address: "Vialidad de la Barranca S/N, Col. Hacienda de las Palmas, C.P. 52763, Huixquilucan, Edo. de México",
       city: "Huixquilucan / CDMX",
-      googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Hospital+Angeles+Lomas+Vialidad+de+la+Barranca+Hacienda+de+las+Palmas+52763+Huixquilucan",
-      mapEmbedUrl: "https://maps.google.com/maps?q=Hospital+Angeles+Lomas,+Vialidad+de+la+Barranca+S/N,+Hacienda+de+las+Palmas,+52763+Huixquilucan&t=&z=16&ie=UTF8&iwloc=&output=embed"
+      googleMapsUrl: "https://g.page/r/CUBHBzTCiA3uEBM/",
+      mapEmbedUrl: "https://maps.google.com/maps?q=Dr.+Ra%C3%BAl+Vega+-+Cirujano+Tor%C3%A1cico&cid=17153516923402012480&t=&z=16&ie=UTF8&iwloc=&output=embed"
     },
     {
       id: "angeles-pedregal",
-      name: "Consultorio Ángeles Pedregal",
+      name: "Consultorio Torre Ángeles Pedregal",
       address: "Camino a Santa Teresa 1055, Col. Héroes de Padierna, C.P. 10700, La Magdalena Contreras, CDMX",
       city: "Ciudad de México (Sur)",
-      googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Hospital+Angeles+Pedregal+Camino+a+Santa+Teresa+1055",
-      mapEmbedUrl: "https://maps.google.com/maps?q=Hospital+Angeles+Pedregal,+Camino+a+Santa+Teresa+1055&t=&z=16&ie=UTF8&iwloc=&output=embed"
+      googleMapsUrl: "https://g.page/r/CTNhDkW2e5AHEBM/",
+      mapEmbedUrl: "https://maps.google.com/maps?q=Dr.+Ra%C3%BAl+Vega+-+Cirujano+Tor%C3%A1cico+CDMX&cid=545071577684664627&t=&z=16&ie=UTF8&iwloc=&output=embed"
     },
     {
       id: "starmedica-pedregal",
       name: "Consultorio Star Médica Pedregal",
       address: "Cda. de San Jerónimo 430, Col. Jardines del Pedregal, C.P. 01900, Álvaro Obregón, CDMX",
       city: "Ciudad de México (Sur)",
-      googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Star+Medica+Pedregal+San+Jeronimo+430",
-      mapEmbedUrl: "https://maps.google.com/maps?q=Star+Medica+Pedregal,+Cda.+de+San+Jeronimo+430&t=&z=16&ie=UTF8&iwloc=&output=embed"
+      googleMapsUrl: "https://g.page/r/CWOp13UVB6cNEBM/",
+      mapEmbedUrl: "https://maps.google.com/maps?q=Dr.+Ra%C3%BAl+Vega+Vivar+Cirujano+Tor%C3%A1cico&cid=983762832356518243&t=&z=16&ie=UTF8&iwloc=&output=embed"
     }
   ],
   city: "Ciudad de México",
   state: "Estado de México / CDMX",
   country: "México",
-  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Hospital+Angeles+Lomas+Vialidad+de+la+Barranca+Hacienda+de+las+Palmas+52763+Huixquilucan",
+  googleMapsUrl: "https://g.page/r/CUBHBzTCiA3uEBM/",
+  sameAs: [
+    "https://g.page/r/CUBHBzTCiA3uEBM/",
+    "https://g.page/r/CTNhDkW2e5AHEBM/",
+    "https://g.page/r/CWOp13UVB6cNEBM/"
+  ],
   consultationPrice: 2000,
   paymentMethods: ["Efectivo", "Transferencia", "Tarjeta de Débito", "Tarjeta de Crédito", "Pagos NFC", "Meses Sin Intereses (MSI)"],
   insurances: ["AXA Seguros", "GNP Seguros", "MetLife", "Monterrey New York Life", "Mapfre", "Seguros Banorte", "Bupa", "Allianz"],
