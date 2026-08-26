@@ -34,7 +34,7 @@ export const doctor: DoctorProfile = {
     {
       id: "starmedica-pedregal",
       name: "Consultorio Star Médica Pedregal",
-      address: "Cda. de San Jerónimo 430, Col. Jardines del Pedregal, C.P. 01900, Álvaro Obregón, CDMX",
+      address: "Av. Insurgentes Sur #3500, Col. Peña Pobre, C.P. 14060, Ciudad de México, CDMX",
       city: "Ciudad de México (Sur)",
       googleMapsUrl: "https://g.page/r/CWOp13UVB6cNEBM/",
       mapEmbedUrl: "https://maps.google.com/maps?q=Dr.+Ra%C3%BAl+Vega+Vivar+Cirujano+Tor%C3%A1cico&cid=983762832356518243&t=&z=16&ie=UTF8&iwloc=&output=embed"
